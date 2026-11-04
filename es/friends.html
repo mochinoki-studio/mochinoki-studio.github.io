@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amigos · Mochi Noki</title>
+<meta name="description" content="Cinco amigos, todos gratis">
+<link rel="canonical" href="https://mochi-noki.github.io/es/friends.html">
+<link rel="alternate" hreflang="ko" href="https://mochi-noki.github.io/friends.html">
+<link rel="alternate" hreflang="en" href="https://mochi-noki.github.io/en/friends.html">
+<link rel="alternate" hreflang="ja" href="https://mochi-noki.github.io/ja/friends.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mochi-noki.github.io/zh-Hans/friends.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mochi-noki.github.io/zh-Hant/friends.html">
+<link rel="alternate" hreflang="es" href="https://mochi-noki.github.io/es/friends.html">
+<link rel="alternate" hreflang="fr" href="https://mochi-noki.github.io/fr/friends.html">
+<link rel="alternate" hreflang="de" href="https://mochi-noki.github.io/de/friends.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/friends.html">
+<link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/friends.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="with-sections">
+<header class="site"><div><a class="brand" href="./">Mochi Noki</a><a href="releases.html">Novedades</a><a href="support.html">Ayuda</a><a href="privacy.html">Privacidad</a><details class="langs"><summary aria-label="Idioma">🌐 Español</summary><ul><li><a href="../friends.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/friends.html" lang="en" hreflang="en">English</a></li><li><a href="../ja/friends.html" lang="ja" hreflang="ja">日本語</a></li><li><a href="../zh-Hans/friends.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/friends.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/friends.html" lang="es" hreflang="es" aria-current="true">Español</a></li><li><a href="../fr/friends.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/friends.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/friends.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
+<nav class="sections" aria-label="Mochi Noki"><div><a href="./">Inicio</a><a href="friends.html" aria-current="page">Amigos</a><a href="seasonal.html">De temporada</a><a href="mac.html">Tu Mac</a><a href="care.html">Tu día</a><a href="light.html">Privacidad</a><a href="install.html">Conseguirla</a></div></nav>
+<main>
+  <section id="friends">
+    <h1 class="page-h">Cinco amigos, todos gratis</h1>
+    <div class="friends"><div class="friend f1"><img loading="lazy" decoding="async" src="../assets/img/friend-mongsil.png" alt="☁️ Mongsil"><h3>☁️ Mongsil</h3><span class="who">una nube bebé</span><p>Su humor es el tiempo: llovizna si tiene hambre, sol cuando cumples la meta de agua del día.</p></div>
+<div class="friend f2"><img loading="lazy" decoding="async" src="../assets/img/friend-boksle.png" alt="🧶 Boksle"><h3>🧶 Boksle</h3><span class="who">una bola de pelo</span><p>Se tumba boca abajo mientras carga; levanta las orejas cuando se acerca el puntero.</p></div>
+<div class="friend f3"><img loading="lazy" decoding="async" src="../assets/img/friend-tangtang.png" alt="🍮 Tangtang"><h3>🍮 Tangtang</h3><span class="who">un flan</span><p>Se derrite chorreando caramelo cuando el Mac se calienta; se menea feliz mientras carga.</p></div>
+<div class="friend f4"><img loading="lazy" decoding="async" src="../assets/img/friend-kongkong.png" alt="🌱 Kongkong"><h3>🌱 Kongkong</h3><span class="who">una judía con brote</span><p>Brilla cuando cumples la meta de agua; su hoja se dobla cuando tiene sueño.</p></div>
+<div class="friend f5"><img loading="lazy" decoding="async" src="../assets/img/friend-mallo.png" alt="🌙 Mallo"><h3>🌙 Mallo</h3><span class="who">un malvavisco conejo lunar</span><p>A partir de las 9 de la noche brilla la luna de su frente.</p></div></div>
+  </section>
+  
+  <div class="pager"><a rel="prev" href="./"><small>← Anterior</small>Inicio</a><a rel="next" href="seasonal.html"><small>Siguiente →</small>De temporada</a></div>
+  <footer>Mochi Noki · app para Mac · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">Preguntar en GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">Todos los dibujos están hechos con el código de dibujo de la propia app.</p>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+    function apply(mode) {
+      if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+    }
+    var saved = 'system';
+    try { saved = localStorage.getItem('noki-theme') || 'system'; } catch (e) {}
+    apply(saved);
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.mode);
+        try { localStorage.setItem('noki-theme', b.dataset.mode); } catch (e) {}
+      });
+    });
+  })();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  const list = menu.querySelector('ul');
+  const place = () => {
+    list.style.left = list.style.right = '';
+    const button = menu.getBoundingClientRect();
+    const width = list.offsetWidth;
+    if (button.right - width < 8) { list.style.left = '0'; list.style.right = 'auto'; }
+    list.style.maxHeight = Math.max(160, innerHeight - button.bottom - 24) + 'px';
+  };
+  menu.addEventListener('toggle', () => { if (menu.open) place(); });
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script><script>
+(() => {
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
+})();
+</script>
+</body>
+</html>

@@ -17,11 +17,17 @@
 <link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/">
 <link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
-<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/site.css"><script>
+(() => {
+  const pages = {"friends": "friends.html", "seasonal": "seasonal.html", "mac": "mac.html", "care": "care.html", "privacy": "light.html", "install": "install.html"};
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (Object.hasOwn(pages, id)) location.replace(pages[id]);
+})();
+</script>
 </head>
 <body class="with-sections">
 <header class="site"><div><a class="brand" href="./">Mochi Noki</a><a href="releases.html">Nouveautés</a><a href="support.html">Aide</a><a href="privacy.html">Confidentialité</a><details class="langs"><summary aria-label="Langue">🌐 Français</summary><ul><li><a href=".././" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/" lang="en" hreflang="en">English</a></li><li><a href="../ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/" lang="es" hreflang="es">Español</a></li><li><a href="../fr/" lang="fr" hreflang="fr" aria-current="true">Français</a></li><li><a href="../de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
-<nav class="sections" aria-label="Mochi Noki"><div><a href="#friends">Amis</a><a href="#seasonal">De saison</a><a href="#mac">Ton Mac</a><a href="#care">Ta journée</a><a href="#privacy">Confidentialité</a><a href="#install">L'obtenir</a></div></nav>
+<nav class="sections" aria-label="Mochi Noki"><div><a href="./" aria-current="page">Aperçu</a><a href="friends.html">Amis</a><a href="seasonal.html">De saison</a><a href="mac.html">Ton Mac</a><a href="care.html">Ta journée</a><a href="light.html">Confidentialité</a><a href="install.html">L'obtenir</a></div></nav>
 <main>
   <header>
     <span class="tag">Mochi Noki · app pour Mac</span>
@@ -30,45 +36,12 @@
     <div class="friends-row" role="img" aria-label="Les cinq amis côte à côte"><img src="../assets/img/friend-mongsil.png" alt=""><img src="../assets/img/friend-boksle.png" alt=""><img src="../assets/img/friend-tangtang.png" alt=""><img src="../assets/img/friend-kongkong.png" alt=""><img src="../assets/img/friend-mallo.png" alt=""></div>
     <div class="chips"><span>💧 Eau</span><span>🙆 Étirements</span><span>🎯 Minuteur</span><span>🌱 Calendrier d'habitudes</span><span>📅 Plans</span><span>🗓️ Calendrier du Mac</span><span>🎈 13 expressions</span><span>☂️ Météo</span><span>🏆 35 succès</span><span>🎾 Jeux</span></div>
   </header>
-  <section id="friends">
-    <h2>Cinq amis, tous gratuits</h2>
-    <div class="friends"><div class="friend f1"><img loading="lazy" decoding="async" src="../assets/img/friend-mongsil.png" alt="☁️ Mongsil"><h3>☁️ Mongsil</h3><span class="who">un bébé nuage</span><p>Son humeur, c'est la météo : bruine quand il a faim, soleil quand l'objectif d'eau du jour est atteint.</p></div>
-<div class="friend f2"><img loading="lazy" decoding="async" src="../assets/img/friend-boksle.png" alt="🧶 Boksle"><h3>🧶 Boksle</h3><span class="who">une boule de poils</span><p>S'aplatit sur le ventre pendant la charge ; dresse les oreilles quand le pointeur approche.</p></div>
-<div class="friend f3"><img loading="lazy" decoding="async" src="../assets/img/friend-tangtang.png" alt="🍮 Tangtang"><h3>🍮 Tangtang</h3><span class="who">un flan</span><p>Fond en coulant du caramel quand le Mac chauffe ; se trémousse de joie pendant la charge.</p></div>
-<div class="friend f4"><img loading="lazy" decoding="async" src="../assets/img/friend-kongkong.png" alt="🌱 Kongkong"><h3>🌱 Kongkong</h3><span class="who">un haricot qui germe</span><p>Scintille quand l'objectif d'eau est atteint ; sa feuille tombe quand il a sommeil.</p></div>
-<div class="friend f5"><img loading="lazy" decoding="async" src="../assets/img/friend-mallo.png" alt="🌙 Mallo"><h3>🌙 Mallo</h3><span class="who">une guimauve lapin de lune</span><p>Après 21 h, le croissant sur son front s'illumine.</p></div></div>
-  </section>
-  <section id="seasonal">
-    <h2>Amis de saison</h2>
-    <p>Avec Noki Plus, tu rencontres un ami spécial à chaque saison, et il reste après la saison et après Plus : Eunhaeng (un mochi de ginkgo) et Danpung (une feuille d'érable) en automne, Noonsongi (une boule de neige duveteuse) et Hoppang (une brioche vapeur en écharpe) en hiver.</p>
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/eunhaeng.jpg" alt="Eunhaeng bébé, adulte et enfant">
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/noonsongi.jpg" alt="Noonsongi bébé, adulte et enfant">
-  </section>
-  <section id="mac">
-    <h2>Il respire avec ton Mac</h2>
-    <p>Noki réagit à la batterie, à la charge, à la chaleur, au clavier et à la souris, et à la mise en veille de l'écran, le tout lu sur ton Mac. Son visage montre treize émotions et, si tu l'actives, il porte un parapluie ou une écharpe selon la météo dehors.</p>
-  </section>
-  <section id="care">
-    <h2>Il veille sur ta journée</h2>
-    <div class="pair"><div class="mini f1"><h3>💧 Eau et étirements</h3><p>Note un verre en un clic, garde tes propres gourdes, ajoute ce que tu as bu loin du Mac. De doux rappels pour t'étirer après une longue période assise, et des minuteurs de 25 ou 50 minutes.</p></div>
-<div class="mini f4"><h3>🌱 Habitudes et plans</h3><p>Tes habitudes en nombre ou en durée, un calendrier mensuel, des plans simples avec rappels et, si tu le connectes, Calendrier.</p></div>
-<div class="mini f3"><h3>🏆 Quêtes et succès</h3><p>Trois quêtes par jour, 35 succès et des défis hebdomadaires et mensuels, récompensés par des friandises pour acheter des tenues.</p></div>
-<div class="mini f5"><h3>🎾 Jeux</h3><p>Caresse-le, lance-lui une balle sur ton écran, joue à trois mini-jeux ou affronte un ami en échangeant des codes.</p></div></div>
-    <div class="shots"><figure><img loading="lazy" decoding="async" src="../assets/img/fr/home-dark.png" alt="Le panneau de l'encoche"><figcaption>Le panneau de l'encoche</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/fr/home-light.png" alt="Mode clair"><figcaption>Mode clair</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" src="../assets/img/fr/habits-dark.png" alt="Les habitudes du jour"><figcaption>Les habitudes du jour</figcaption></figure></div>
-  </section>
-  <section id="privacy">
-    <h2>Léger, et seulement sur ton Mac</h2>
-    <p>Sa respiration ne redessine rien : au repos, il utilise presque 0 % du processeur et se repose quand l'écran est en veille. Ton compagnon et tes données restent sur ton Mac : ni compte ni serveur. Voir la <a href="privacy.html">politique de confidentialité</a>.</p>
-  </section>
-  <section id="install">
-    <h2>Bientôt disponible</h2>
-    <p>Mochi Noki est peaufiné avec des amis. Nous l'annoncerons ici et dans les <a href="releases.html">Nouveautés</a> dès qu'il sera sur le Mac App Store.</p>
-    <div class="note"><ul><li>Mac avec puce Apple (M1 ou ultérieur), macOS 14 Sonoma ou ultérieur</li><li>Sur un Mac sans encoche ou sur un écran externe, une <b>encoche virtuelle</b> apparaît en haut au centre. Tu peux aussi choisir une icône dans la barre des menus.</li><li>Les cinq amis et les fonctions principales sont gratuits. Noki Plus (facultatif) ajoute des habitudes illimitées, la lettre mensuelle de Noki et les amis de saison.</li></ul></div>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/fr/virtual-notch-light.png" alt="Une encoche virtuelle sur un écran qui n'en a pas"><figcaption>Une encoche virtuelle sur un écran qui n'en a pas</figcaption></figure>
-  </section>
-  <p class="closing">Passe une journée avec Noki,<br>et dis-nous quel ami tu préfères 💌</p>
+  <div class="topics"><a href="friends.html"><b>Amis</b><span>Cinq amis, tous gratuits</span></a>
+<a href="seasonal.html"><b>De saison</b><span>Amis de saison</span></a>
+<a href="mac.html"><b>Ton Mac</b><span>Il respire avec ton Mac</span></a>
+<a href="care.html"><b>Ta journée</b><span>Il veille sur ta journée</span></a>
+<a href="light.html"><b>Confidentialité</b><span>Léger, et seulement sur ton Mac</span></a>
+<a href="install.html"><b>L'obtenir</b><span>Bientôt disponible</span></a></div>
   <footer>Mochi Noki · app pour Mac · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">Demander sur GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">Tous les dessins sont faits par le code de dessin de l'app elle-même.</p>
 </main>
 <script>
@@ -108,31 +81,11 @@
 })();
 </script><script>
 (() => {
-  const bar = document.querySelector('.sections');
-  if (!bar) return;
-  const row = bar.firstElementChild;
-  const links = [...bar.querySelectorAll('a[href^="#"]')];
-  const targets = links.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1))));
-  let current = null, queued = false;
-  const update = () => {
-    queued = false;
-    const line = bar.getBoundingClientRect().bottom + 24;
-    let index = -1;
-    targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= line) index = i; });
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) index = targets.length - 1;
-    const link = links[index] || null;
-    if (link === current) return;
-    if (current) current.removeAttribute('aria-current');
-    current = link;
-    if (!link) return;
-    link.setAttribute('aria-current', 'location');
-    const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
-    row.scrollTo({ left: row.scrollLeft + offset - (row.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
-  };
-  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
-  addEventListener('scroll', queue, { passive: true });
-  addEventListener('resize', queue);
-  update();
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
 })();
 </script>
 </body>

@@ -17,16 +17,17 @@
 <link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/">
 <link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
-<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/site.css"><script>
+(() => {
+  const pages = {"friends": "friends.html", "seasonal": "seasonal.html", "feelings": "feelings.html", "mac": "mac.html", "care": "care.html", "theme": "theme.html", "habits": "habits.html", "schedule": "schedule.html", "calendar": "calendar.html", "growth": "growth.html", "collect": "collect.html", "play": "play.html", "closet": "closet.html", "settings": "settings.html", "install": "install.html"};
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (Object.hasOwn(pages, id)) location.replace(pages[id]);
+})();
+</script>
 </head>
 <body class="with-sections">
 <header class="site"><div><a class="brand" href="./">모찌 노키</a><a href="releases.html">업데이트 소식</a><a href="support.html">도움말</a><a href="privacy.html">개인정보 처리방침</a><details class="langs"><summary aria-label="언어">🌐 한국어</summary><ul><li><a href="./" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="en/" lang="en" hreflang="en">English</a></li><li><a href="ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="es/" lang="es" hreflang="es">Español</a></li><li><a href="fr/" lang="fr" hreflang="fr">Français</a></li><li><a href="de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="pt-BR/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
-<nav class="sections" aria-label="목차"><div>
-  <a href="#friends">친구들</a><a href="#seasonal">계절 친구</a><a href="#feelings">표정</a><a href="#mac">맥 반응</a><a href="#care">하루 챙기기</a><a href="#theme">화면 모드</a>
-  <a href="#habits">습관</a><a href="#schedule">일정</a><a href="#calendar">맥 캘린더</a><a href="#growth">성장</a>
-  <a href="#collect">퀘스트·업적</a><a href="#play">놀이</a><a href="#closet">옷장</a><a href="#settings">설정</a><a href="#install">만나는 법</a>
-</div></nav>
-
+<nav class="sections" aria-label="모찌 노키"><div><a href="./" aria-current="page">처음</a><a href="friends.html">친구들</a><a href="seasonal.html">계절 친구</a><a href="feelings.html">표정</a><a href="mac.html">맥 반응</a><a href="care.html">하루 챙기기</a><a href="theme.html">화면 모드</a><a href="habits.html">습관</a><a href="schedule.html">일정</a><a href="calendar.html">맥 캘린더</a><a href="growth.html">성장</a><a href="collect.html">퀘스트·업적</a><a href="play.html">놀이</a><a href="closet.html">옷장</a><a href="settings.html">설정</a><a href="install.html">만나는 법</a></div></nav>
 <main>
   <header>
     <span class="tag">Mochi Noki · macOS 앱</span>
@@ -38,274 +39,23 @@
     <img class="hero" src="assets/img/hero.jpg" alt="맥북 노치 아래로 몽실, 복슬, 탱탱, 콩콩, 마로 다섯 친구가 나란히 웃고 있는 모습">
     <div class="chips"><span>💧 물 마시기</span><span>🙆 스트레칭</span><span>🎯 집중 타이머</span><span>🌱 습관 캘린더</span><span>📅 일정 알림</span><span>🗓️ 맥 캘린더</span><span>🎈 13가지 표정</span><span>☂️ 날씨</span><span>🏆 업적 35개</span><span>🎾 같이 놀기</span></div>
   </header>
-
-  <section id="friends">
-    <h2>다섯 친구, 모두 무료예요</h2>
-    <p class="soft">처음에 한 친구를 골라 알부터 키워요. 맥 상태에 반응하는 모습이 친구마다 달라요.</p>
-    <div class="friends">
-      <div class="friend f1"><img loading="lazy" decoding="async" src="assets/img/friend-mongsil.png" alt="구름 아기 몽실이 해맑게 웃는 모습"><h3>☁️ 몽실</h3><span class="who">구름 아기 · 다정하고 해맑아요</span><p>기분이 곧 날씨예요. 배고프면 보슬비가 내리고, 오늘 물 목표를 채우면 해가 떠요.</p></div>
-      <div class="friend f2"><img loading="lazy" decoding="async" src="assets/img/friend-boksle.png" alt="털뭉치 복슬이 배를 깔고 누운 모습"><h3>🧶 복슬</h3><span class="who">털뭉치 · 느긋하고 호기심 많아요</span><p>충전 중엔 배를 깔고 납작 엎드려요. 커서를 올리면 귀가 쫑긋 서요.</p></div>
-      <div class="friend f3"><img loading="lazy" decoding="async" src="assets/img/friend-tangtang.png" alt="푸딩 탱탱이 더워서 녹아내리는 모습"><h3>🍮 탱탱</h3><span class="who">푸딩 · 신나면 못 참는 흥부자</span><p>맥이 뜨거워지면 캐러멜이 흘러내리며 녹아요. 충전 중엔 신나서 흔들흔들해요.</p></div>
-      <div class="friend f4"><img loading="lazy" decoding="async" src="assets/img/friend-kongkong.png" alt="새싹 콩 콩콩이 반짝이는 모습"><h3>🌱 콩콩</h3><span class="who">새싹 콩 · 성실한 노력파</span><p>오늘 물 목표를 채우면 반짝반짝 빛나요. 졸리거나 지치면 잎이 축 처져요.</p></div>
-      <div class="friend f5"><img loading="lazy" decoding="async" src="assets/img/friend-mallo.png" alt="달토끼 마시멜로 마로의 이마에서 초승달이 빛나는 모습"><h3>🌙 마로</h3><span class="who">달토끼 마시멜로 · 차분한 밤 친구</span><p>밤 9시가 지나면 이마의 초승달이 은은하게 빛나요.</p></div>
-    </div>
-  </section>
-
-  <section id="seasonal">
-    <h2>가을에만 오는 친구, 은행이와 단풍이 🍂🍁</h2>
-    <p>계절마다 한정 친구가 찾아와요(Noki Plus). 가을(9~11월)엔 은행 열매에서 깨어난 버터빛 찹쌀떡 은행이예요. 머리의 은행잎이 연두에서 노랑, 황금빛으로 물들고, 어른이 되면 잎 두 장을 리본처럼 달아요. 맥이 뜨거우면 잎으로 부채질하고, 오래 앉아 있으면 잎이 하나 툭 떨어져요. 한 번 만나면 계절이 지나도 계속 함께해요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/eunhaeng.jpg" alt="아기, 어른, 어린이 은행이가 은행잎을 쓰고 웃는 모습">
-    <p>단짝 단풍이는 단풍잎 모양의 장난꾸러기예요. 아기 땐 노랑, 어린이 땐 주황, 어른이 되면 빨갛게 물들어요. 충전 중엔 빙그르 돌고, 오래 앉아 있으면 폴짝 뛰어요. 둘 다 가을에 알을 받을 수 있어요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/danpung.jpg" alt="노란 아기, 빨간 어른, 주황 어린이 단풍이가 나란히 있는 모습">
-    <h3>겨울엔 눈송이와 호빵이 ❄️🥟</h3>
-    <p>겨울(12~2월)엔 복슬복슬한 눈뭉치 눈송이가 찾아와요. 투명한 얼음 눈꽃 왕관을 쓰고, 어른이 되면 눈꽃 날개와 배에서 빛나는 눈꽃이 생겨요. 맥이 뜨거우면 살짝 녹아요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/noonsongi.jpg" alt="눈꽃 왕관을 쓴 복슬복슬한 눈뭉치 눈송이의 아기, 어른, 어린이">
-    <p>단짝 호빵이는 주름 잡힌 꼭지에서 김이 모락모락 나는 호빵이에요. 포근한 털목도리를 두르고, 충전 중이거나 추운 날엔 김이 더 피어올라요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/hoppang.jpg" alt="김이 나는 호빵이의 아기, 어른, 어린이">
-    <p class="soft">출시 후 첫 겨울에는 겨울 친구와 함께 은행이·단풍이도 만날 수 있어요(출시 기념).</p>
-  </section>
-
-  <section id="feelings">
-    <h2>기분이 얼굴에 다 보여요</h2>
-    <p>평소엔 평온한 얼굴로 곁에 있다가, 무슨 일이 생기면 잠깐 표정이 바뀌고 다시 평온으로 돌아와요. 머리 옆 작은 표시(♪, 💢, !!, ?) 덕분에 노치만 한 크기에서도 한눈에 알아봐요. 13가지 표정을 다 보면 숨은 업적도 열려요.</p>
-    <div class="loops">
-      <img loading="lazy" decoding="async" src="assets/img/loop-mongsil.gif" alt="몽실의 13가지 표정이 차례로 바뀌는 애니메이션">
-      <img loading="lazy" decoding="async" src="assets/img/loop-boksle.gif" alt="복슬의 13가지 표정이 차례로 바뀌는 애니메이션">
-      <img loading="lazy" decoding="async" src="assets/img/loop-tangtang.gif" alt="탱탱의 13가지 표정이 차례로 바뀌는 애니메이션">
-      <img loading="lazy" decoding="async" src="assets/img/loop-kongkong.gif" alt="콩콩의 13가지 표정이 차례로 바뀌는 애니메이션">
-      <img loading="lazy" decoding="async" src="assets/img/loop-mallo.gif" alt="마로의 13가지 표정이 차례로 바뀌는 애니메이션">
-    </div>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/faces-grid.jpg" alt="다섯 친구의 13가지 표정 표: 평온, 기쁨, 즐거움, 부끄러움, 뿌듯함, 놀람, 졸림, 심심함, 걱정, 슬픔, 화남, 배고픔, 더워요">
-    <div class="when">
-      <div><b>평온</b>평소 얼굴. 별일 없으면 늘 이 얼굴이에요</div>
-      <div><b>기쁨</b>물 마시기, 간식, 쓰다듬기</div>
-      <div><b>즐거움</b>같이 놀기, 공놀이, 미니게임 성공</div>
-      <div><b>부끄러움</b>자꾸 쓰다듬기, 새 옷 입기</div>
-      <div><b>뿌듯함</b>집중 타이머 완료, 습관·퀘스트·업적 달성</div>
-      <div><b>놀람</b>충전기 뽑기, 공에 콩 맞기</div>
-      <div><b>졸림</b>새벽(0~5시), 15분 넘게 자리 비움</div>
-      <div><b>심심함</b>한참 동안 안 놀아 줄 때</div>
-      <div><b>걱정</b>배터리 20% 이하, 90분 넘게 쉬지 않기</div>
-      <div><b>슬픔</b>미니게임 실패, 기분이 많이 낮을 때</div>
-      <div><b>화남</b>연속 콕콕, 자는데 깨우기, 알림 계속 미루기</div>
-      <div><b>배고픔</b>배부름이 30 아래로 떨어지면</div>
-      <div><b>더워요</b>맥이 뜨거워지면(발열 경고)</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>바깥 날씨도 함께 느껴요</h2>
-    <p>⚙️ → 날씨에서 도시 이름만 넣으면 비 오는 날엔 우산을 쓰고, 눈 오는 날엔 귀마개, 추운 날(5℃ 이하)엔 목도리, 더운 날(28℃ 이상)엔 부채, 맑은 날엔 선글라스를 써요. 기본은 꺼져 있어요.</p>
-    <div class="scroll"><img loading="lazy" decoding="async" class="grid-img" src="assets/img/weather-grid.jpg" alt="다섯 친구의 날씨 모습: 비에 우산, 눈에 귀마개, 추운 날 목도리, 더운 날 부채, 맑은 날 선글라스"></div>
-  </section>
-
-  <section id="mac">
-    <h2>내 맥이랑 같이 숨 쉬어요</h2>
-    <p>노키는 배터리, 충전, 발열, 키보드·마우스 사용, 화면 잠듦을 읽고 그대로 반응해요. 맥을 아껴 쓸수록 노키 기분도 좋아져요.</p>
-    <div class="scroll"><img loading="lazy" decoding="async" class="grid-img" src="assets/img/reactions-grid.jpg" alt="맥 상태에 따른 다섯 친구의 모습: 충전 중, 뜨거울 때, 배터리 20% 이하, 10% 이하, 오래 앉아 있을 때, 밤 9시 이후, 새벽과 자리 비움, 낮잠 재주"></div>
-    <p class="hint">표가 잘리면 옆으로 밀어 보세요.</p>
-    <div class="pair">
-      <div class="mini f2"><h3>🔋 배터리와 충전</h3><p>패널 아래에 메뉴 막대처럼 배터리와 충전 번개가 보여요. 충전기를 꽂으면 바로 번개가 뜨고, 20% 아래로 떨어지기 전에 충전하면 절제력이 자라요.</p></div>
-      <div class="mini f3"><h3>🔥 발열</h3><p>맥이 뜨거워지면 "더워요" 얼굴이 되고 기분이 내려가요. 탱탱은 아예 녹아내려요.</p></div>
-      <div class="mini f4"><h3>🪑 오래 앉아 있으면</h3><p>쉬지 않고 오래 쓰면 기지개를 켜자고 하고, 90분이 넘으면 걱정해요. 5분 넘게 자리를 비우면 제대로 쉰 걸로 쳐요.</p></div>
-      <div class="mini f5"><h3>🌙 늦은 밤과 잠자기</h3><p>밤 9시가 지나면 마로의 달이 빛나고, 새벽엔 꾸벅꾸벅 졸아요. 새벽에 일하면 기분이 내려가고, 제때 쉬면 올라가요. 화면이 잠들거나 덮개를 닫으면 노키도 움직임을 멈추고 쉬어요.</p></div>
-    </div>
-  </section>
-
-  <section id="care">
-    <h2>하루를 살뜰히 챙겨 줘요</h2>
-    <div class="card">
-      <h3>🏠 홈 탭</h3>
-      <p>노키를 누르면 패널이 바로 열려요. 다음 일정, 집중 타이머, 배부름·기분·레벨, 다섯 능력치, 간식, 물, 재주를 한 화면에서 봐요. 맨 아래엔 충전 상태, 발열, CPU, 연속 사용 시간이 있어요.</p>
-      <div class="shots">
-        <figure><img loading="lazy" decoding="async" src="assets/img/home.png" alt="홈 탭: 다음 일정, 집중 타이머, 배부름과 기분, 능력치, 간식, 물 기록"><figcaption>노치 패널(홈)</figcaption></figure>
-        <figure><img loading="lazy" decoding="async" class="shot light" src="assets/img/home-light.png" alt="라이트 모드의 홈 탭"><figcaption>라이트 모드</figcaption></figure>
-      </div>
-    </div>
-    <div class="card">
-      <h3>💧 물 기록</h3>
-      <p>+250mL 버튼으로 톡 기록하고, 텀블러·머그처럼 컵마다 양을 따로 저장해 둘 수 있어요. 하루 목표와 알림 간격도 정해요. 실수로 눌렀다면 되돌리기. 맥을 안 쓸 때 마신 물도 "아까 마신 물 추가"로 시간과 양을 골라 넣을 수 있어요. 7일 연속 목표를 채우면 물방울 핀을 받아요.</p>
-      <div class="shots">
-        <figure><img loading="lazy" decoding="async" src="assets/img/water.png" alt="오늘 마신 물 기록과 내 컵 목록"><figcaption>오늘 마신 물과 내 컵</figcaption></figure>
-      </div>
-    </div>
-    <div class="card">
-      <h3>🙆 스트레칭 · 🎯 집중 타이머</h3>
-      <p>쉬지 않고 오래 앉아 있으면 (기본 50분) 기지개 켜자고 말을 걸어요. 집중 타이머는 25분·50분 중에 고르고, 끝까지 마치면 노키가 뿌듯해하며 배도 불러요. 밤, 집중 중, 전체 화면일 땐 알림이 조용히 기다려요.</p>
-      <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/bubble-stretch.png" alt="노치 옆 스트레칭 말풍선"><figcaption>말풍선 스타일</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/banner-stretch.png" alt="macOS 알림처럼 생긴 스트레칭 배너"><figcaption>배너 스타일(⚙️ → 알림 → 스타일에서 골라요)</figcaption></figure>
-    </div>
-    <div class="note">
-      <b>🖱️ 마우스 휠로 숫자 조절</b>
-      <p>숫자나 시간 칸 위에서 휠을 굴리거나 트랙패드를 쓸어 올리면 바로 바뀌어요. 일정 날짜는 하루씩, 시간은 5분씩, 그리고 알림 시간, 습관 횟수와 분, 물 양, 컵 용량, 물 목표, 캘린더 알림까지 다 돼요.</p>
-    </div>
-  </section>
-
-  <section id="theme">
-    <h2>라이트·다크, 맥을 따라가요</h2>
-    <p>⚙️ → 일반 → 화면 모드에서 <b>시스템</b>(기본), <b>라이트</b>, <b>다크</b>를 골라요. 시스템으로 두면 맥이 밤에 다크로 바뀔 때 노키 패널도 그 자리에서 함께 바뀌어요. 노치 패널, 말풍선, 배너, 미니게임, 설정 카드까지 모두 두 모드를 지원해요.</p>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/home-dark.png" alt="다크 모드의 노치 패널"><figcaption>다크: 노치가 그대로 아래로 늘어난 듯한 검은 패널</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" class="shot light" src="assets/img/home-light.png" alt="라이트 모드의 노치 패널, 위쪽에 검은 이음새"><figcaption>라이트: 노치 자리에 검은 이음새를 남겨 노치에서 자라나온 것처럼</figcaption></figure>
-    </div>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="assets/img/bubble-schedule-light.png" alt="라이트 모드의 일정 말풍선"><figcaption>라이트 모드 말풍선</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="assets/img/banner-schedule-light.png" alt="라이트 모드의 일정 배너"><figcaption>라이트 모드 배너</figcaption></figure>
-  </section>
-
-  <section id="habits">
-    <h2>나만의 습관 캘린더</h2>
-    <p>"책 10쪽 읽기", "치실 하루 2번", "기타 30분"처럼 습관을 만들고, 요일과 알림을 정해요. 집중·스트레칭·물 목표도 기본 습관으로 같이 보여요.</p>
-    <div class="pair">
-      <div class="mini f4"><h3>횟수 목표</h3><p>+ 버튼으로 한 번씩 채워요. 다 채우면 체크, 연속으로 하면 🔥 숫자가 늘어요.</p></div>
-      <div class="mini f3"><h3>시간 목표</h3><p>시작·종료 버튼으로 재요. 한 번에 하나씩, 앱을 껐다 켜도 이어지고, 자정이 지나면 날을 나눠 기록해요(한 번에 최대 4시간).</p></div>
-      <div class="mini f1"><h3>하루만 하는 습관</h3><p>"엄마한테 전화"처럼 오늘 하루만 할 일도 습관으로 넣을 수 있어요.</p></div>
-      <div class="mini f5"><h3>한 달 캘린더</h3><p>많이 한 날일수록 진해지고, 일정이 있는 날엔 점이 찍혀요.</p></div>
-    </div>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/habits.png" alt="오늘의 습관 목록: 횟수, 시간 타이머, 하루만 습관"><figcaption>오늘의 습관</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/habit-calendar.png" alt="한 달 습관 캘린더"><figcaption>한 달 캘린더</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/habit-editor-time.png" alt="습관 편집: 횟수와 시간, 반복과 하루만, 요일, 알림"><figcaption>횟수/시간, 반복/하루만</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/habit-editor.png" alt="치실하기 습관 편집: 하루 2번, 밤 10시 알림"><figcaption>요일과 알림</figcaption></figure>
-    </div>
-    <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/bubble-habit.png" alt="습관 알림 말풍선"><figcaption>정한 시간에 습관 알림</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/banner-timer.png" alt="타이머를 켜 둔 채 잊었을 때 묻는 배너"><figcaption>타이머를 깜빡하면 "계속 하는 중이에요?" 하고 물어봐요</figcaption></figure>
-  </section>
-
-  <section id="schedule">
-    <h2>오늘 일정, 노키가 팻말 들고 알려 줘요</h2>
-    <p>치과, 생일, 장보기 같은 간단한 일정을 제목·날짜·시간·메모로 넣어요. 정각이나 10분·30분 전에 노키가 팻말을 들고 알려 주고, "했어요"를 누르면 체크돼요. 시간 없이 "하루 종일"로 둘 수도 있고, 노키를 우클릭해 "일정 추가…"로 바로 넣을 수도 있어요. 홈 탭엔 다음 일정이 떠요.</p>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/schedule.png" alt="오늘과 다가오는 일정 목록, 캘린더 일정은 색 점으로 표시"><figcaption>일정 탭(색 점은 맥 캘린더 일정)</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/schedule-editor.png" alt="일정 편집: 제목, 날짜, 시간, 알림, 메모"><figcaption>일정 편집</figcaption></figure>
-    </div>
-    <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/bubble-schedule.png" alt="일정 알림 말풍선"><figcaption>말풍선으로</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot" src="assets/img/banner-schedule.png" alt="일정 알림 배너: 했어요, 확인 버튼"><figcaption>배너로</figcaption></figure>
-  </section>
-
-  <section id="calendar">
-    <h2>맥 캘린더와 연결해요 <span class="soft" style="font-size:.7em">(선택)</span></h2>
-    <p>⚙️ → 맥 캘린더에서 "캘린더 연결하기"를 누르면 캘린더 앱의 일정(추가해 둔 구글·iCloud 캘린더 포함)이 내 일정과 함께 시간순으로 보여요.</p>
-    <div class="card">
-      <ul>
-        <li><b>오늘부터 7일</b> 동안의 일정을 읽어 일정 탭, 홈 탭의 다음 일정, 습관 캘린더 점에 같이 보여 줘요.</li>
-        <li>보여 줄 캘린더를 고르고, 알림(없음·정각·10분 전·30분 전)도 정해요. 노키가 팻말 들고 알려 줘요.</li>
-        <li><b>"모찌 노키 일정을 캘린더에도 추가"</b>를 켜면 여기서 만든 일정이 고른 캘린더(기본은 새 "Mochi Noki" 캘린더)에 들어가요. 켤 때 다가오는 일정도 같이 넣을지 물어봐요.</li>
-        <li><b>양방향</b>: 캘린더 앱에서 그 일정의 제목·날짜·시간·메모를 고치면 모찌 노키에도 반영되고 알림 시간도 다시 맞춰요. 여기서 고치거나 지우면 캘린더 쪽도 같이 바뀌어요.</li>
-        <li>다른 일정은 <b>읽기만</b> 해요. 바꾸지도, 저장하지도 않아요.</li>
-      </ul>
-      <div class="shots">
-        <figure><img loading="lazy" decoding="async" src="assets/img/calendar-card.png" alt="맥 캘린더 설정: 캘린더 일정 보기, 알림 받기, 모찌 노키 일정을 캘린더에도 추가, 캘린더 고르기"><figcaption>맥 캘린더 설정</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section id="growth">
-    <h2>알에서 어른까지 함께 자라요</h2>
-    <p>맥을 같이 쓰는 시간만큼 자라요. 배부르고 기분이 좋을수록 빨리 커요. 보통 하루 만에 부화하고, 이틀째 어린이, 열흘 남짓이면 어른이 돼요.</p>
-    <div class="scroll"><img loading="lazy" decoding="async" class="grid-img" src="assets/img/stages-grid.jpg" alt="다섯 친구의 알, 부화 직전, 아기, 어린이, 어른 단계"></div>
-    <div class="card">
-      <h3>다섯 능력치가 어른 모습을 정해요</h3>
-      <div class="when">
-        <div><b>집중력</b>사용 시간과 집중 타이머 → 집중왕</div>
-        <div><b>체력</b>스트레칭과 제대로 된 휴식 → 스트레칭 요정</div>
-        <div><b>절제력</b>미리 충전, 과열 피하기 → 절약왕</div>
-        <div><b>규칙성</b>주로 아침에 → 아침형, 주로 밤에 → 올빼미형</div>
-        <div><b>애정</b>놀아 주기와 간식, 또는 고르게 → 균형형</div>
-      </div>
-    </div>
-    <div class="scroll"><img loading="lazy" decoding="async" class="grid-img" src="assets/img/forms.jpg" alt="다섯 친구마다 6가지 어른 모습: 아침형, 올빼미형, 집중왕, 스트레칭 요정, 절약왕, 균형형"></div>
-    <p><b>각성</b>: 어른이 된 뒤에도 그 능력치를 꾸준히 키우면 금빛 테두리와 함께 각성해요. 해돋이 아침형, 달빛 올빼미, 불꽃 집중왕, 무지개 요정, 번개 절약왕, 후광 균형형.</p>
-    <div class="scroll"><img loading="lazy" decoding="async" class="grid-img" src="assets/img/forms-awakened.jpg" alt="각성한 어른 모습 30가지"></div>
-    <div class="pair">
-      <div class="mini f5"><h3>🎓 졸업과 앨범</h3><p>다 자란 친구는 졸업시켜 앨범에 남기고 새 알을 키울 수 있어요. 앨범에서 언제든 다시 불러와요. 하루하루는 일기에 남아요.</p></div>
-      <div class="mini f3"><h3>✨ 레벨과 재주</h3><p>어른이 된 뒤에도 레벨이 오르고 재주를 배워요: 👋 손 흔들기, 💃 춤, 🌀 빙글빙글, 🤸 물구나무, 😴 이불 덮고 낮잠, 🎆 불꽃놀이 등 열두 가지. 재주마다 동작과 효과가 달라요(음표, 회오리, 요술봉 반짝이, 꽃가루…). 아이콘에 마우스를 올리면 이름이 나와요.</p></div>
-    </div>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/pets.png" alt="친구별 도감: 몽실 1/6, 각성 표시"><figcaption>친구별 도감 30칸(친구마다 6칸, ✦는 각성). 칸을 누르면 키우는 법이 보여요</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="collect">
-    <h2>매일 퀘스트와 업적 35개</h2>
-    <div class="card">
-      <h3>📝 오늘의 퀘스트</h3>
-      <p>매일 퀘스트 3개가 나와요("물 목표의 75% 마시기", "펫과 3번 놀아 주기", "새벽에는 쉬기" 같은 것). 깨면 간식 🍪을 받고, 간식은 노키에게 끌어다 주면 냠냠 먹어요.</p>
-    </div>
-    <div class="card">
-      <h3>🏆 업적</h3>
-      <p>성장, 몸 챙기기, 습관과 일정, 함께 놀기, 작은 순간들, 다섯 갈래로 35개가 있어요. 배지마다 진행 링이 차오르고, 누르면 조건이 보여요. 숨은 업적 5개는 ???로 가려져 있다가 우연히 열려요. 달성하면 간식을 받고, 노키가 축하 동작과 함께 뿌듯한 얼굴을 해요. 리본, 학사모 같은 옷도 업적으로 받아요. 이번 주·이번 달 반복 업적(물 목표 5일, 스트레칭 20번 같은 것)도 있어서, 달성할 때마다 간식을 받고 ×N이 늘어요.</p>
-    </div>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/quests.png" alt="오늘의 퀘스트 3개와 간식 보상"><figcaption>오늘의 퀘스트</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/achievements.png" alt="업적 배지 판과 진행 링"><figcaption>업적 배지 판</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="play">
-    <h2>심심할 땐 같이 놀아요</h2>
-    <p>노키 위에 커서를 올리면 쓰다듬기, 더블클릭하면 폴짝 뛰어요. "놀이 시작" 버튼이나 ⌥⌘P, 또는 노키를 아래로 끌어내리면 화면으로 놀러 나와요. 쉬는 시간에 "놀자!" 하고 물어볼 때도 있지만, 놀이는 내가 시작할 때만 열려요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/play.jpg" alt="쓰다듬으면 하트가 퐁퐁, 불꽃놀이 재주, 공을 쫓는 모습">
-    <div class="pair">
-      <div class="mini f4"><h3>🎾 공놀이와 쓰다듬기</h3><p>공을 던지면 쫓아가서 물어 와요. 쓰다듬으면 하트가 퐁퐁, 자꾸 문지르면 간지러워해요. 들고 마구 흔들면 눈이 뱅글뱅글 어지러워하고, 너무 많이 뛰면 헥헥 지쳐서 쉬어요.</p></div>
-      <div class="mini f1"><h3>🎮 미니게임</h3><p>컵 섞기, 기다려!, 리듬 맞추기. 리듬 맞추기는 337 박수, 쿵짝짝 같은 리듬의 음표가 동그라미에 닿을 때 치는 게임이에요(25가지 리듬, 속도도 매번 달라요). 만점·좋아·아쉬워로 점수를 매기고, 기록은 Top 10으로 남아요.</p></div>
-      <div class="mini f2"><h3>⚡ 친구 대결</h3><p>어린이가 되면 대결 코드를 메시지로 주고받아 대결해요. 서버 없이 두 코드로 결과가 정해지고, 서명이 있어 고친 코드는 거부돼요.</p></div>
-    </div>
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/records.png" alt="미니게임 기록 Top 10"><figcaption>미니게임 기록</figcaption></figure>
-      <figure><img loading="lazy" decoding="async" src="assets/img/battle.png" alt="친구 대결: 내 코드 복사, 복사한 코드와 대결"><figcaption>친구 대결</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="closet">
-    <h2>옷장에서 꾸며요</h2>
-    <p>머리, 얼굴, 목, 등, 부위마다 하나씩 입혀요. 커서를 올리면 미리 입어 보고, 검색과 부위별 보기도 돼요. 업적과 계절 이벤트로 받는 옷도 있고, 습관과 퀘스트로 모은 간식으로 살 수 있는 옷도 있어요.</p>
-    <img loading="lazy" decoding="async" class="grid-img" src="assets/img/wardrobe.jpg" alt="리본, 꽃관, 왕관, 안경, 목도리, 학사모, 호박 모자, 산타 모자, 복주머니, 물방울 핀을 입은 친구들">
-    <div class="shots">
-      <figure><img loading="lazy" decoding="async" src="assets/img/closet.png" alt="옷장: 부위별 착용 상태와 아이템"><figcaption>옷장 탭</figcaption></figure>
-    </div>
-  </section>
-
-  <section id="settings">
-    <h2>설정은 ⚙️ 하나로</h2>
-    <div class="when">
-      <div><b>알림</b>스타일(말풍선/배너), 스트레칭 알림과 간격, 물 알림과 간격</div>
-      <div><b>맥 캘린더</b>연결, 보여 줄 캘린더, 알림 시간, 캘린더에도 추가</div>
-      <div><b>날씨</b>도시 이름(기본은 꺼짐)</div>
-      <div><b>놀이</b>놀이 크기, 미니게임 소리, 쉬는 시간에 놀자고 묻기, ⌥⌘P 단축키</div>
-      <div><b>펫과 노치</b>노치 왼쪽/오른쪽, 노치 없는 화면(가상 노치/메뉴 막대 아이콘), 졸업 물어보기</div>
-      <div><b>일반</b>화면 모드(시스템/라이트/다크), 언어(9개), 로그인할 때 열기</div>
-      <div><b>데이터</b>백업 내보내기/불러오기</div>
-      <div><b>그 밖에</b>노치 다시 찾기, 피드백 보내기</div>
-    </div>
-    <p class="soft">한국어, English, 日本語, 简体中文, 繁體中文, Español, Français, Deutsch, Português(Brasil)를 지원해요. ? 버튼엔 키우는 법 안내가 있어요.</p>
-  </section>
-
-  <section>
-    <h2>가볍고, 내 맥 안에만</h2>
-    <div class="pair">
-      <div class="mini f4"><h3>🪶 가벼워요</h3><p>노키의 숨쉬기는 그림을 다시 그리지 않는 방식이라, 평소 CPU 사용은 0%대예요. 화면이 잠들면 아예 쉬어요. 켜 둬도 배터리 걱정이 없어요.</p></div>
-      <div class="mini f1"><h3>🔒 내 맥에만</h3><p>펫과 기록은 모두 이 맥에만 저장돼요. 계정도, 서버도 없어요. 날씨를 켰을 때만 도시 이름이 날씨 서버(Open-Meteo)로 가요. 캘린더 일정은 저장하지 않아요.</p></div>
-      <div class="mini f5"><h3>💾 백업</h3><p>⚙️ → 데이터 → 백업 내보내기/불러오기로 파일 하나에 담아 옮겨요. 업데이트할 때는 이전 저장을 자동으로 보관해 둬요.</p></div>
-    </div>
-  </section>
-
-  <section id="install">
-    <h2>준비하고 있어요</h2>
-    <p>모찌 노키는 지금 친구들과 함께 다듬는 중이에요. Mac App Store에서 만날 수 있게 되면 여기와 <a href="releases.html">업데이트 소식</a>에 알려 드릴게요.</p>
-    <div class="note">
-      <ul>
-        <li>Apple 실리콘 맥(M1 이상), macOS 14 Sonoma 이상</li>
-        <li>노치가 없는 맥이나 외장 모니터에선 화면 위 가운데에 <b>가상 노치</b>가 생겨요. 메뉴 막대 아이콘으로 바꿀 수도 있어요.</li>
-        <li>다섯 친구와 핵심 기능은 모두 무료예요. Noki Plus(선택)는 습관 무제한, 매달 노키의 편지, 계절 한정 친구를 더해요.</li>
-      </ul>
-    </div>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="assets/img/virtual-notch.png" alt="메뉴 막대 가운데의 가상 노치와 그 옆의 아기 펫"><figcaption>노치가 없는 화면의 가상 노치</figcaption></figure>
-  </section>
-
-  <p class="closing">노키랑 하루 지내 보고,<br>어떤 친구가 제일 마음에 드는지 들려주세요 💌</p>
+  <div class="topics"><a href="friends.html"><b>친구들</b><span>다섯 친구, 모두 무료예요</span></a>
+<a href="seasonal.html"><b>계절 친구</b><span>가을에만 오는 친구, 은행이와 단풍이 🍂🍁</span></a>
+<a href="feelings.html"><b>표정</b><span>기분이 얼굴에 다 보여요</span></a>
+<a href="mac.html"><b>맥 반응</b><span>내 맥이랑 같이 숨 쉬어요</span></a>
+<a href="care.html"><b>하루 챙기기</b><span>하루를 살뜰히 챙겨 줘요</span></a>
+<a href="theme.html"><b>화면 모드</b><span>라이트·다크, 맥을 따라가요</span></a>
+<a href="habits.html"><b>습관</b><span>나만의 습관 캘린더</span></a>
+<a href="schedule.html"><b>일정</b><span>오늘 일정, 노키가 팻말 들고 알려 줘요</span></a>
+<a href="calendar.html"><b>맥 캘린더</b><span>맥 캘린더와 연결해요 (선택)</span></a>
+<a href="growth.html"><b>성장</b><span>알에서 어른까지 함께 자라요</span></a>
+<a href="collect.html"><b>퀘스트·업적</b><span>매일 퀘스트와 업적 35개</span></a>
+<a href="play.html"><b>놀이</b><span>심심할 땐 같이 놀아요</span></a>
+<a href="closet.html"><b>옷장</b><span>옷장에서 꾸며요</span></a>
+<a href="settings.html"><b>설정</b><span>설정은 ⚙️ 하나로</span></a>
+<a href="install.html"><b>만나는 법</b><span>준비하고 있어요</span></a></div>
   <footer>모찌 노키 · macOS 앱 · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">GitHub에서 문의하기</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">모든 그림은 앱의 실제 그리기 코드로 만들었어요.</p>
 </main>
-
 <script>
   (function () {
     var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
@@ -343,31 +93,11 @@
 })();
 </script><script>
 (() => {
-  const bar = document.querySelector('.sections');
-  if (!bar) return;
-  const row = bar.firstElementChild;
-  const links = [...bar.querySelectorAll('a[href^="#"]')];
-  const targets = links.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1))));
-  let current = null, queued = false;
-  const update = () => {
-    queued = false;
-    const line = bar.getBoundingClientRect().bottom + 24;
-    let index = -1;
-    targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= line) index = i; });
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) index = targets.length - 1;
-    const link = links[index] || null;
-    if (link === current) return;
-    if (current) current.removeAttribute('aria-current');
-    current = link;
-    if (!link) return;
-    link.setAttribute('aria-current', 'location');
-    const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
-    row.scrollTo({ left: row.scrollLeft + offset - (row.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
-  };
-  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
-  addEventListener('scroll', queue, { passive: true });
-  addEventListener('resize', queue);
-  update();
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
 })();
 </script>
 </body>

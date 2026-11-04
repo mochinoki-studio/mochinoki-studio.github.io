@@ -17,11 +17,17 @@
 <link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/">
 <link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
-<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/site.css"><script>
+(() => {
+  const pages = {"friends": "friends.html", "seasonal": "seasonal.html", "mac": "mac.html", "care": "care.html", "privacy": "light.html", "install": "install.html"};
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (Object.hasOwn(pages, id)) location.replace(pages[id]);
+})();
+</script>
 </head>
 <body class="with-sections">
 <header class="site"><div><a class="brand" href="./">モチノキ</a><a href="releases.html">アップデート情報</a><a href="support.html">ヘルプ</a><a href="privacy.html">プライバシー</a><details class="langs"><summary aria-label="言語">🌐 日本語</summary><ul><li><a href=".././" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/" lang="en" hreflang="en">English</a></li><li><a href="../ja/" lang="ja" hreflang="ja" aria-current="true">日本語</a></li><li><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/" lang="es" hreflang="es">Español</a></li><li><a href="../fr/" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
-<nav class="sections" aria-label="モチノキ"><div><a href="#friends">友だち</a><a href="#seasonal">季節の友だち</a><a href="#mac">Macとの反応</a><a href="#care">一日のケア</a><a href="#privacy">プライバシー</a><a href="#install">入手方法</a></div></nav>
+<nav class="sections" aria-label="モチノキ"><div><a href="./" aria-current="page">はじめに</a><a href="friends.html">友だち</a><a href="seasonal.html">季節の友だち</a><a href="mac.html">Macとの反応</a><a href="care.html">一日のケア</a><a href="light.html">プライバシー</a><a href="install.html">入手方法</a></div></nav>
 <main>
   <header>
     <span class="tag">モチノキ · Macアプリ</span>
@@ -30,45 +36,12 @@
     <div class="friends-row" role="img" aria-label="5人の友だちが並んでいるところ"><img src="../assets/img/friend-mongsil.png" alt=""><img src="../assets/img/friend-boksle.png" alt=""><img src="../assets/img/friend-tangtang.png" alt=""><img src="../assets/img/friend-kongkong.png" alt=""><img src="../assets/img/friend-mallo.png" alt=""></div>
     <div class="chips"><span>💧 水分</span><span>🙆 ストレッチ</span><span>🎯 集中タイマー</span><span>🌱 習慣カレンダー</span><span>📅 予定</span><span>🗓️ Macのカレンダー</span><span>🎈 13の表情</span><span>☂️ 天気</span><span>🏆 35の実績</span><span>🎾 あそび</span></div>
   </header>
-  <section id="friends">
-    <h2>5人の友だち、全員無料</h2>
-    <div class="friends"><div class="friend f1"><img loading="lazy" decoding="async" src="../assets/img/friend-mongsil.png" alt="☁️ モンシル"><h3>☁️ モンシル</h3><span class="who">雲の赤ちゃん</span><p>気分がそのまま天気に。おなかがすくと小雨、今日の水分目標を達成すると晴れ。</p></div>
-<div class="friend f2"><img loading="lazy" decoding="async" src="../assets/img/friend-boksle.png" alt="🧶 ボクスル"><h3>🧶 ボクスル</h3><span class="who">もふもふの毛玉</span><p>充電中はおなかを床にぺたん。ポインターが近づくと耳がぴんと立ちます。</p></div>
-<div class="friend f3"><img loading="lazy" decoding="async" src="../assets/img/friend-tangtang.png" alt="🍮 タンタン"><h3>🍮 タンタン</h3><span class="who">プリン</span><p>Macが熱くなるとカラメルをたらしてとろけ、充電中はうれしそうにぷるぷる。</p></div>
-<div class="friend f4"><img loading="lazy" decoding="async" src="../assets/img/friend-kongkong.png" alt="🌱 コンコン"><h3>🌱 コンコン</h3><span class="who">新芽の豆</span><p>今日の水分目標を達成するとキラキラ。眠くなると葉っぱがしおれます。</p></div>
-<div class="friend f5"><img loading="lazy" decoding="async" src="../assets/img/friend-mallo.png" alt="🌙 マロ"><h3>🌙 マロ</h3><span class="who">月うさぎのマシュマロ</span><p>夜9時を過ぎると、おでこの三日月が光ります。</p></div></div>
-  </section>
-  <section id="seasonal">
-    <h2>季節の友だち</h2>
-    <p>Noki Plusのメンバーは季節ごとに限定の友だちに出会えます。季節が過ぎても、Plusが終わってもずっと一緒です。秋はウネン（銀杏のおもち）とタンプン（もみじ）、冬はヌンソンイ（ふわふわの雪玉）とホッパン（マフラーを巻いた肉まん）。</p>
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/eunhaeng.jpg" alt="赤ちゃん・大人・子どものウネン">
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/noonsongi.jpg" alt="赤ちゃん・大人・子どものヌンソンイ">
-  </section>
-  <section id="mac">
-    <h2>Macと一緒に呼吸します</h2>
-    <p>バッテリー、充電、熱、キーボードやマウスの動き、画面のスリープに反応します。どれもMacの中だけで読み取ります。顔には13の気持ちが表れ、オンにすれば外の天気に合わせて傘やマフラーも身につけます。</p>
-  </section>
-  <section id="care">
-    <h2>一日を見守ります</h2>
-    <div class="pair"><div class="mini f1"><h3>💧 水分とストレッチ</h3><p>ワンクリックで1杯を記録。自分のカップを登録したり、Macから離れていたときの分も追加できます。長く座っていると伸びを勧め、25分・50分の集中タイマーもあります。</p></div>
-<div class="mini f4"><h3>🌱 習慣と予定</h3><p>回数や時間で決める自分の習慣、1か月の習慣カレンダー、リマインド付きの予定、そして（つなげれば）Macのカレンダー。</p></div>
-<div class="mini f3"><h3>🏆 クエストと実績</h3><p>毎日3つのクエスト、35の実績、週と月のチャレンジ。ごほうびのおやつで服が買えます。</p></div>
-<div class="mini f5"><h3>🎾 あそび</h3><p>なでたり、画面の上でボールを投げたり、3つのミニゲームで遊んだり。コードを交換すれば友だちとバトルも。</p></div></div>
-    <div class="shots"><figure><img loading="lazy" decoding="async" src="../assets/img/ja/home-dark.png" alt="ノッチのパネル"><figcaption>ノッチのパネル</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/ja/home-light.png" alt="ライトモード"><figcaption>ライトモード</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" src="../assets/img/ja/habits-dark.png" alt="今日の習慣"><figcaption>今日の習慣</figcaption></figure></div>
-  </section>
-  <section id="privacy">
-    <h2>軽くて、Macの中だけで</h2>
-    <p>呼吸のアニメーションは描き直しをしないので、ふだんのCPU使用率はほぼ0%。画面がスリープするとノキも休みます。ペットと記録はあなたのMacの中だけに。アカウントもサーバーもありません。詳しくは<a href="privacy.html">プライバシーポリシー</a>へ。</p>
-  </section>
-  <section id="install">
-    <h2>準備中です</h2>
-    <p>モチノキは今、友だちと一緒に仕上げているところです。Mac App Storeで出会えるようになったら、ここと<a href="releases.html">アップデート情報</a>でお知らせします。</p>
-    <div class="note"><ul><li>Appleシリコン搭載Mac（M1以降）、macOS 14 Sonoma以降</li><li>ノッチのないMacや外部ディスプレイでは、画面上部の中央に<b>仮想ノッチ</b>が現れます。メニューバーのアイコンに切り替えることもできます。</li><li>5人の友だちと主な機能はすべて無料。Noki Plus（任意）では、習慣が無制限になり、毎月のノキからの手紙と季節の友だちが加わります。</li></ul></div>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/ja/virtual-notch-light.png" alt="ノッチのない画面の仮想ノッチ"><figcaption>ノッチのない画面の仮想ノッチ</figcaption></figure>
-  </section>
-  <p class="closing">ノキと一日すごしてみて、<br>どの友だちがいちばん好きか教えてね 💌</p>
+  <div class="topics"><a href="friends.html"><b>友だち</b><span>5人の友だち、全員無料</span></a>
+<a href="seasonal.html"><b>季節の友だち</b><span>季節の友だち</span></a>
+<a href="mac.html"><b>Macとの反応</b><span>Macと一緒に呼吸します</span></a>
+<a href="care.html"><b>一日のケア</b><span>一日を見守ります</span></a>
+<a href="light.html"><b>プライバシー</b><span>軽くて、Macの中だけで</span></a>
+<a href="install.html"><b>入手方法</b><span>準備中です</span></a></div>
   <footer>モチノキ · Macアプリ · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">GitHubで問い合わせる</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">すべての絵はアプリの実際の描画コードで描いています。</p>
 </main>
 <script>
@@ -108,31 +81,11 @@
 })();
 </script><script>
 (() => {
-  const bar = document.querySelector('.sections');
-  if (!bar) return;
-  const row = bar.firstElementChild;
-  const links = [...bar.querySelectorAll('a[href^="#"]')];
-  const targets = links.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1))));
-  let current = null, queued = false;
-  const update = () => {
-    queued = false;
-    const line = bar.getBoundingClientRect().bottom + 24;
-    let index = -1;
-    targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= line) index = i; });
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) index = targets.length - 1;
-    const link = links[index] || null;
-    if (link === current) return;
-    if (current) current.removeAttribute('aria-current');
-    current = link;
-    if (!link) return;
-    link.setAttribute('aria-current', 'location');
-    const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
-    row.scrollTo({ left: row.scrollLeft + offset - (row.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
-  };
-  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
-  addEventListener('scroll', queue, { passive: true });
-  addEventListener('resize', queue);
-  update();
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
 })();
 </script>
 </body>

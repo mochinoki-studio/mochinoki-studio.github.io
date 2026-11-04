@@ -17,11 +17,17 @@
 <link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/">
 <link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
-<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/site.css"><script>
+(() => {
+  const pages = {"friends": "friends.html", "seasonal": "seasonal.html", "mac": "mac.html", "care": "care.html", "privacy": "light.html", "install": "install.html"};
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (Object.hasOwn(pages, id)) location.replace(pages[id]);
+})();
+</script>
 </head>
 <body class="with-sections">
 <header class="site"><div><a class="brand" href="./">麻糬诺奇</a><a href="releases.html">更新动态</a><a href="support.html">帮助</a><a href="privacy.html">隐私</a><details class="langs"><summary aria-label="语言">🌐 简体中文</summary><ul><li><a href=".././" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/" lang="en" hreflang="en">English</a></li><li><a href="../ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="../zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/" lang="es" hreflang="es">Español</a></li><li><a href="../fr/" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
-<nav class="sections" aria-label="麻糬诺奇"><div><a href="#friends">伙伴</a><a href="#seasonal">季节伙伴</a><a href="#mac">Mac 反应</a><a href="#care">照顾一天</a><a href="#privacy">隐私</a><a href="#install">获取方式</a></div></nav>
+<nav class="sections" aria-label="麻糬诺奇"><div><a href="./" aria-current="page">概览</a><a href="friends.html">伙伴</a><a href="seasonal.html">季节伙伴</a><a href="mac.html">Mac 反应</a><a href="care.html">照顾一天</a><a href="light.html">隐私</a><a href="install.html">获取方式</a></div></nav>
 <main>
   <header>
     <span class="tag">麻糬诺奇 · Mac 应用</span>
@@ -30,45 +36,12 @@
     <div class="friends-row" role="img" aria-label="五位伙伴排成一排"><img src="../assets/img/friend-mongsil.png" alt=""><img src="../assets/img/friend-boksle.png" alt=""><img src="../assets/img/friend-tangtang.png" alt=""><img src="../assets/img/friend-kongkong.png" alt=""><img src="../assets/img/friend-mallo.png" alt=""></div>
     <div class="chips"><span>💧 喝水</span><span>🙆 伸展</span><span>🎯 专注计时</span><span>🌱 习惯日历</span><span>📅 日程</span><span>🗓️ Mac 日历</span><span>🎈 13 种表情</span><span>☂️ 天气</span><span>🏆 35 个成就</span><span>🎾 一起玩</span></div>
   </header>
-  <section id="friends">
-    <h2>五位伙伴，全部免费</h2>
-    <div class="friends"><div class="friend f1"><img loading="lazy" decoding="async" src="../assets/img/friend-mongsil.png" alt="☁️ 绵绵"><h3>☁️ 绵绵</h3><span class="who">云朵宝宝</span><p>心情就是天气：饿了会下小雨，完成今天的喝水目标就放晴。</p></div>
-<div class="friend f2"><img loading="lazy" decoding="async" src="../assets/img/friend-boksle.png" alt="🧶 绒绒"><h3>🧶 绒绒</h3><span class="who">毛绒球</span><p>充电时肚子贴地趴着，指针靠近时耳朵会竖起来。</p></div>
-<div class="friend f3"><img loading="lazy" decoding="async" src="../assets/img/friend-tangtang.png" alt="🍮 弹弹"><h3>🍮 弹弹</h3><span class="who">布丁</span><p>Mac 发热时会滴着焦糖融化，充电时开心地晃来晃去。</p></div>
-<div class="friend f4"><img loading="lazy" decoding="async" src="../assets/img/friend-kongkong.png" alt="🌱 豆豆"><h3>🌱 豆豆</h3><span class="who">发芽的豆子</span><p>完成今天的喝水目标会闪闪发光，困了叶子会耷拉下来。</p></div>
-<div class="friend f5"><img loading="lazy" decoding="async" src="../assets/img/friend-mallo.png" alt="🌙 棉兔"><h3>🌙 棉兔</h3><span class="who">月兔棉花糖</span><p>晚上 9 点以后，额头上的弯月会发光。</p></div></div>
-  </section>
-  <section id="seasonal">
-    <h2>季节伙伴</h2>
-    <p>Noki Plus 会员每个季节都能遇见一位限定伙伴，季节过去、Plus 结束后也会一直陪着你：秋天是银杏宝（银杏麻糬）和枫叶宝（枫叶），冬天是雪团宝（毛茸茸的雪球）和包子宝（围着围巾的包子）。</p>
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/eunhaeng.jpg" alt="宝宝、大人、孩子阶段的银杏宝">
-    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/noonsongi.jpg" alt="宝宝、大人、孩子阶段的雪团宝">
-  </section>
-  <section id="mac">
-    <h2>和你的 Mac 一起呼吸</h2>
-    <p>诺奇会对电量、充电、发热、键盘和鼠标活动以及屏幕休眠做出反应，这些都只在你的 Mac 上读取。它的脸能表现 13 种心情，开启天气后还会根据外面的天气撑伞或围上围巾。</p>
-  </section>
-  <section id="care">
-    <h2>照顾你的一天</h2>
-    <div class="pair"><div class="mini f1"><h3>💧 喝水与伸展</h3><p>一键记录一杯水，可以保存自己的杯子，也能补记离开 Mac 时喝的水。久坐时温柔提醒你伸展，还有 25 或 50 分钟的专注计时。</p></div>
-<div class="mini f4"><h3>🌱 习惯与日程</h3><p>按次数或时长设定自己的习惯，一个月的习惯日历，带提醒的日程，以及（连接后的）Mac 日历。</p></div>
-<div class="mini f3"><h3>🏆 任务与成就</h3><p>每天三个任务、35 个成就以及每周和每月挑战，奖励零食可以买衣服。</p></div>
-<div class="mini f5"><h3>🎾 一起玩</h3><p>摸摸它、在屏幕上给它扔球、玩三个小游戏，或者和朋友交换代码来对战。</p></div></div>
-    <div class="shots"><figure><img loading="lazy" decoding="async" src="../assets/img/zh-Hans/home-dark.png" alt="刘海面板"><figcaption>刘海面板</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/zh-Hans/home-light.png" alt="浅色模式"><figcaption>浅色模式</figcaption></figure>
-    <figure><img loading="lazy" decoding="async" src="../assets/img/zh-Hans/habits-dark.png" alt="今天的习惯"><figcaption>今天的习惯</figcaption></figure></div>
-  </section>
-  <section id="privacy">
-    <h2>轻巧，而且只在你的 Mac 上</h2>
-    <p>呼吸动画不会重绘画面，所以平时 CPU 占用接近 0%，屏幕休眠时诺奇也会休息。宠物和记录只保存在你的 Mac 上：没有账号，也没有服务器。详见<a href="privacy.html">隐私政策</a>。</p>
-  </section>
-  <section id="install">
-    <h2>即将推出</h2>
-    <p>麻糬诺奇正在和朋友们一起打磨。上架 Mac App Store 后，我们会在这里和<a href="releases.html">更新动态</a>中通知你。</p>
-    <div class="note"><ul><li>搭载 Apple 芯片的 Mac（M1 或更新），macOS 14 Sonoma 或更高版本</li><li>没有刘海的 Mac 或外接显示器上，屏幕顶部中央会出现<b>虚拟刘海</b>。也可以改为菜单栏图标。</li><li>五位伙伴和核心功能全部免费。Noki Plus（可选）提供无限习惯、诺奇每月的信和季节伙伴。</li></ul></div>
-    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/zh-Hans/virtual-notch-light.png" alt="没有刘海的屏幕上的虚拟刘海"><figcaption>没有刘海的屏幕上的虚拟刘海</figcaption></figure>
-  </section>
-  <p class="closing">和诺奇一起过一天，<br>告诉我们你最喜欢哪位伙伴 💌</p>
+  <div class="topics"><a href="friends.html"><b>伙伴</b><span>五位伙伴，全部免费</span></a>
+<a href="seasonal.html"><b>季节伙伴</b><span>季节伙伴</span></a>
+<a href="mac.html"><b>Mac 反应</b><span>和你的 Mac 一起呼吸</span></a>
+<a href="care.html"><b>照顾一天</b><span>照顾你的一天</span></a>
+<a href="light.html"><b>隐私</b><span>轻巧，而且只在你的 Mac 上</span></a>
+<a href="install.html"><b>获取方式</b><span>即将推出</span></a></div>
   <footer>麻糬诺奇 · Mac 应用 · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">在 GitHub 上提问</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">所有图片都由应用实际的绘图代码画出。</p>
 </main>
 <script>
@@ -108,31 +81,11 @@
 })();
 </script><script>
 (() => {
-  const bar = document.querySelector('.sections');
-  if (!bar) return;
-  const row = bar.firstElementChild;
-  const links = [...bar.querySelectorAll('a[href^="#"]')];
-  const targets = links.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1))));
-  let current = null, queued = false;
-  const update = () => {
-    queued = false;
-    const line = bar.getBoundingClientRect().bottom + 24;
-    let index = -1;
-    targets.forEach((t, i) => { if (t && t.getBoundingClientRect().top <= line) index = i; });
-    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) index = targets.length - 1;
-    const link = links[index] || null;
-    if (link === current) return;
-    if (current) current.removeAttribute('aria-current');
-    current = link;
-    if (!link) return;
-    link.setAttribute('aria-current', 'location');
-    const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
-    row.scrollTo({ left: row.scrollLeft + offset - (row.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
-  };
-  const queue = () => { if (!queued) { queued = true; requestAnimationFrame(update); } };
-  addEventListener('scroll', queue, { passive: true });
-  addEventListener('resize', queue);
-  update();
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
 })();
 </script>
 </body>

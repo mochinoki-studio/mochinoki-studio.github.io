@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seasonal · Mochi Noki</title>
+<meta name="description" content="Seasonal friends">
+<link rel="canonical" href="https://mochi-noki.github.io/en/seasonal.html">
+<link rel="alternate" hreflang="ko" href="https://mochi-noki.github.io/seasonal.html">
+<link rel="alternate" hreflang="en" href="https://mochi-noki.github.io/en/seasonal.html">
+<link rel="alternate" hreflang="ja" href="https://mochi-noki.github.io/ja/seasonal.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mochi-noki.github.io/zh-Hans/seasonal.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mochi-noki.github.io/zh-Hant/seasonal.html">
+<link rel="alternate" hreflang="es" href="https://mochi-noki.github.io/es/seasonal.html">
+<link rel="alternate" hreflang="fr" href="https://mochi-noki.github.io/fr/seasonal.html">
+<link rel="alternate" hreflang="de" href="https://mochi-noki.github.io/de/seasonal.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/seasonal.html">
+<link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/seasonal.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="with-sections">
+<header class="site"><div><a class="brand" href="./">Mochi Noki</a><a href="releases.html">What's new</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><details class="langs"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../seasonal.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/seasonal.html" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="../ja/seasonal.html" lang="ja" hreflang="ja">日本語</a></li><li><a href="../zh-Hans/seasonal.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/seasonal.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/seasonal.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/seasonal.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/seasonal.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/seasonal.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
+<nav class="sections" aria-label="Mochi Noki"><div><a href="./">Overview</a><a href="friends.html">Friends</a><a href="seasonal.html" aria-current="page">Seasonal</a><a href="mac.html">Your Mac</a><a href="care.html">Your day</a><a href="light.html">Privacy</a><a href="install.html">Get it</a></div></nav>
+<main>
+  <section id="seasonal">
+    <h1 class="page-h">Seasonal friends</h1>
+    <p>Noki Plus members meet a limited friend each season, and keep it after the season and after Plus: Eunhaeng (a ginkgo mochi) and Danpung (a maple leaf) in autumn, Noonsongi (a fluffy snowball) and Hoppang (a steamed bun in a scarf) in winter.</p>
+    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/eunhaeng.jpg" alt="Eunhaeng as a baby, an adult and a child">
+    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/noonsongi.jpg" alt="Noonsongi as a baby, an adult and a child">
+  </section>
+  
+  <div class="pager"><a rel="prev" href="friends.html"><small>← Previous</small>Friends</a><a rel="next" href="mac.html"><small>Next →</small>Your Mac</a></div>
+  <footer>Mochi Noki · a Mac app · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">Every picture is drawn by the app's own drawing code.</p>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+    function apply(mode) {
+      if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+    }
+    var saved = 'system';
+    try { saved = localStorage.getItem('noki-theme') || 'system'; } catch (e) {}
+    apply(saved);
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.mode);
+        try { localStorage.setItem('noki-theme', b.dataset.mode); } catch (e) {}
+      });
+    });
+  })();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  const list = menu.querySelector('ul');
+  const place = () => {
+    list.style.left = list.style.right = '';
+    const button = menu.getBoundingClientRect();
+    const width = list.offsetWidth;
+    if (button.right - width < 8) { list.style.left = '0'; list.style.right = 'auto'; }
+    list.style.maxHeight = Math.max(160, innerHeight - button.bottom - 24) + 'px';
+  };
+  menu.addEventListener('toggle', () => { if (menu.open) place(); });
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script><script>
+(() => {
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>一日のケア · モチノキ</title>
+<meta name="description" content="一日を見守ります">
+<link rel="canonical" href="https://mochi-noki.github.io/ja/care.html">
+<link rel="alternate" hreflang="ko" href="https://mochi-noki.github.io/care.html">
+<link rel="alternate" hreflang="en" href="https://mochi-noki.github.io/en/care.html">
+<link rel="alternate" hreflang="ja" href="https://mochi-noki.github.io/ja/care.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mochi-noki.github.io/zh-Hans/care.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mochi-noki.github.io/zh-Hant/care.html">
+<link rel="alternate" hreflang="es" href="https://mochi-noki.github.io/es/care.html">
+<link rel="alternate" hreflang="fr" href="https://mochi-noki.github.io/fr/care.html">
+<link rel="alternate" hreflang="de" href="https://mochi-noki.github.io/de/care.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mochi-noki.github.io/pt-BR/care.html">
+<link rel="alternate" hreflang="x-default" href="https://mochi-noki.github.io/care.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="with-sections">
+<header class="site"><div><a class="brand" href="./">モチノキ</a><a href="releases.html">アップデート情報</a><a href="support.html">ヘルプ</a><a href="privacy.html">プライバシー</a><details class="langs"><summary aria-label="言語">🌐 日本語</summary><ul><li><a href="../care.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/care.html" lang="en" hreflang="en">English</a></li><li><a href="../ja/care.html" lang="ja" hreflang="ja" aria-current="true">日本語</a></li><li><a href="../zh-Hans/care.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/care.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/care.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/care.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/care.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/care.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
+<nav class="sections" aria-label="モチノキ"><div><a href="./">はじめに</a><a href="friends.html">友だち</a><a href="seasonal.html">季節の友だち</a><a href="mac.html">Macとの反応</a><a href="care.html" aria-current="page">一日のケア</a><a href="light.html">プライバシー</a><a href="install.html">入手方法</a></div></nav>
+<main>
+  <section id="care">
+    <h1 class="page-h">一日を見守ります</h1>
+    <div class="pair"><div class="mini f1"><h3>💧 水分とストレッチ</h3><p>ワンクリックで1杯を記録。自分のカップを登録したり、Macから離れていたときの分も追加できます。長く座っていると伸びを勧め、25分・50分の集中タイマーもあります。</p></div>
+<div class="mini f4"><h3>🌱 習慣と予定</h3><p>回数や時間で決める自分の習慣、1か月の習慣カレンダー、リマインド付きの予定、そして（つなげれば）Macのカレンダー。</p></div>
+<div class="mini f3"><h3>🏆 クエストと実績</h3><p>毎日3つのクエスト、35の実績、週と月のチャレンジ。ごほうびのおやつで服が買えます。</p></div>
+<div class="mini f5"><h3>🎾 あそび</h3><p>なでたり、画面の上でボールを投げたり、3つのミニゲームで遊んだり。コードを交換すれば友だちとバトルも。</p></div></div>
+    <div class="shots"><figure><img loading="lazy" decoding="async" src="../assets/img/ja/home-dark.png" alt="ノッチのパネル"><figcaption>ノッチのパネル</figcaption></figure>
+    <figure><img loading="lazy" decoding="async" class="shot light" src="../assets/img/ja/home-light.png" alt="ライトモード"><figcaption>ライトモード</figcaption></figure>
+    <figure><img loading="lazy" decoding="async" src="../assets/img/ja/habits-dark.png" alt="今日の習慣"><figcaption>今日の習慣</figcaption></figure></div>
+  </section>
+  
+  <div class="pager"><a rel="prev" href="mac.html"><small>← 前へ</small>Macとの反応</a><a rel="next" href="light.html"><small>次へ →</small>プライバシー</a></div>
+  <footer>モチノキ · Macアプリ · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">GitHubで問い合わせる</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">すべての絵はアプリの実際の描画コードで描いています。</p>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+    function apply(mode) {
+      if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+    }
+    var saved = 'system';
+    try { saved = localStorage.getItem('noki-theme') || 'system'; } catch (e) {}
+    apply(saved);
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.mode);
+        try { localStorage.setItem('noki-theme', b.dataset.mode); } catch (e) {}
+      });
+    });
+  })();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  const list = menu.querySelector('ul');
+  const place = () => {
+    list.style.left = list.style.right = '';
+    const button = menu.getBoundingClientRect();
+    const width = list.offsetWidth;
+    if (button.right - width < 8) { list.style.left = '0'; list.style.right = 'auto'; }
+    list.style.maxHeight = Math.max(160, innerHeight - button.bottom - 24) + 'px';
+  };
+  menu.addEventListener('toggle', () => { if (menu.open) place(); });
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script><script>
+(() => {
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
+})();
+</script>
+</body>
+</html>
