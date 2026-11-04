@@ -25,7 +25,7 @@
 <main class="doc">
   <header>
     <h1>Mochi Noki Privacy Policy</h1>
-    <p class="meta">Effective November 4, 2026 · Version 1.1</p>
+    <p class="meta">Effective November 4, 2026 · Version 1.2</p>
     <p>This policy explains how the operator of Mochi Noki ("we") handles information in the Mochi Noki app for macOS and on this website. It follows the structure required by Korea's Personal Information Protection Act (Article 30).</p>
   <p class="prevails">This English version is provided for reference. The <a href="../privacy.html">Korean version</a> is authoritative; if the two differ, the Korean version prevails.</p>
   </header>
@@ -35,7 +35,7 @@
     <div class="labels">
       <span><b>🙅 Nothing collected</b>We don't collect your personal information or keep it on any server. No accounts, ads or analytics.</span>
       <span><b>💻 On your Mac</b>Your pet and records are processed and stored only on your Mac.</span>
-      <span><b>☁️ Sent out: weather only</b>Only if you turn weather on, a city name and its coordinates go to a weather service.</span>
+      <span><b>📴 Nothing sent out</b>The app sends no information over the internet. It doesn't even have permission to connect.</span>
     </div>
   </section>
 
@@ -71,7 +71,7 @@
     <p>Information is processed only for these purposes; if they change, we'll update this policy first.</p>
     <ul>
       <li>Raising your pet and keeping your daily records (water, stretching, focus, habits, plans)</li>
-      <li>If you turn them on: showing and reminding you of Mac Calendar events, and dressing your pet for the weather outside</li>
+      <li>If you turn it on: showing and reminding you of Mac Calendar events</li>
       <li>Checking whether you have Noki Plus</li>
       <li>Answering you when you contact us (for example by email)</li>
     </ul>
@@ -91,11 +91,8 @@
       <li>Backups: "Export backup" writes the above to a file where you choose. On updates the app keeps copies of the previous save (the last three), a copy made just before you import a backup, and a copy of any save a new version couldn't read (kept aside rather than deleted), all in the same folder.</li>
     </ul>
     <p>The app uses no camera, microphone, contacts, macOS Location Services (GPS or Wi-Fi location), Accessibility, Input Monitoring or Screen Recording access. It never reads what you type, other apps' names, window titles or documents, or the websites you visit.</p>
-    <h3>② Sent out only when you turn it on</h3>
-    <ul>
-      <li>Weather (off by default): the city name you type, its coordinates (two decimals, about 1 km) and the app's language code are sent to the weather service Open-Meteo. Turning weather off also deletes the saved city and reading. Details: <a href="#overseas">section 9</a>.</li>
-    </ul>
-    <p>These coordinates are those of the city you typed, not of your device. Even so, the App Store privacy label lists them as "Coarse Location · Not linked to you · Not used to track you · App Functionality". The app collects no other data.</p>
+    <h3>② Sent out</h3>
+    <p>Nothing. The app has no network permission, so no information, including your pet and records, ever leaves your Mac. The weather feature of earlier versions is gone in this version; a city typed before stays inside the app, unused. The App Store privacy label is "Data Not Collected".</p>
     <h3>③ Payments</h3>
     <p>Noki Plus purchases and subscriptions are handled by Apple's App Store. We never receive payment or Apple Account details; the app only checks the signed purchase records Apple keeps on your Mac to see whether Plus is on. See the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. A subscription renews automatically unless cancelled at least 24 hours before the renewal date; manage or cancel it in your App Store account settings (in the app: Shop › Plus › "Manage subscription"). The Terms of Use are <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard license agreement (EULA)</a>.</p>
     <h3>④ What you send yourself</h3>
@@ -115,7 +112,6 @@
     <ul>
       <li>On your Mac: until you delete it. We keep nothing.</li>
       <li>Copies of the previous save made on updates: the last three; older ones are deleted automatically.</li>
-      <li>Weather requests: we have no server and keep nothing. Open-Meteo says it deletes its web server logs after 90 days (<a href="#overseas">section 9</a>).</li>
       <li>Emails: kept for one year after we answer, then deleted, or right away if you ask.</li>
     </ul>
   </section>
@@ -124,7 +120,7 @@
     <h2>5. How it's deleted</h2>
     <ul>
       <li>App data: move the app to the Trash and, in Finder, delete the "Mochi Noki" folder under <code>~/Library/Containers/</code>. That removes your pet and records.</li>
-      <li>Per feature: turning weather off deletes the saved city and reading; disconnecting Calendar clears the events read; events the app added to Calendar can be deleted in the Calendar app.</li>
+      <li>Per feature: disconnecting Calendar clears the events read; events the app added to Calendar can be deleted in the Calendar app.</li>
       <li>Exported backups: delete them where you saved them.</li>
       <li>Emails: deleted beyond recovery when the retention period ends.</li>
     </ul>
@@ -134,7 +130,6 @@
     <h2>6. Sharing with third parties</h2>
     <p>We don't share or sell personal information to third parties. The app contains no third-party SDKs for analytics, advertising or crash reporting.</p>
     <ul>
-      <li>Weather: the app asks Open-Meteo directly, for a feature you turned on (<a href="#overseas">section 9</a>). Open-Meteo says it doesn't link IP addresses to anyone's identity, doesn't share its server logs (which may contain coordinates) with any third party, and deletes them after 90 days. We use only services that protect information at least as well as this policy does; if that changes, we'll change or stop the feature and update this policy.</li>
       <li>Payments: Apple processes App Store payments directly, under the Apple Privacy Policy (<a href="#items">section 2 ③</a>).</li>
     </ul>
   </section>
@@ -151,16 +146,7 @@
 
   <section id="overseas">
     <h2>9. Transfers abroad</h2>
-    <p>Only if you turn weather on, the following is sent abroad. With weather off, nothing is.</p>
-    <div class="tw"><table>
-      <tr><th>Recipient</th><td>OpenMeteo GmbH (Switzerland) · info@open-meteo.com</td></tr>
-      <tr><th>Countries</th><td>Open-Meteo says its servers run in Europe and North America (countries not stated).</td></tr>
-      <tr><th>When and how</th><td>About once an hour while weather is on, and when a city is first looked up; over HTTPS, without cookies</td></tr>
-      <tr><th>What</th><td>City name, coordinates (two decimals), the app's language code. As with any internet request, your IP address reaches the service.</td></tr>
-      <tr><th>Why</th><td>To find the city's coordinates and read the current weather</td></tr>
-      <tr><th>Retention</th><td>Per Open-Meteo, web server logs are deleted after 90 days (<a href="https://open-meteo.com/en/terms">Open-Meteo terms and privacy notice</a>)</td></tr>
-      <tr><th>How to refuse</th><td>Turn weather off in ⚙️ › Weather. Sending stops, and the pet no longer dresses for the weather; nothing else changes.</td></tr>
-    </table></div>
+    <p>Not applicable. The app sends no information abroad, or anywhere else.</p>
   </section>
 
   <section id="safety">
@@ -168,7 +154,7 @@
     <ul>
       <li>Information is processed only on your Mac; we have no servers or account systems.</li>
       <li>The app runs in the macOS App Sandbox and reaches only what you allow.</li>
-      <li>Weather requests are sent only over encrypted HTTPS.</li>
+      <li>The app has no network permission, so there is no way for information to leave your Mac.</li>
     </ul>
   </section>
 
@@ -199,8 +185,7 @@
       <li>See: in the app, or all of it as a file with ⚙️ › Data › Export backup</li>
       <li>Correct: edit your pet's name, habits, plans and water logs in the app</li>
       <li>Delete: per record, or everything as in <a href="#destruction">section 5</a></li>
-      <li>Stop or withdraw consent: turn weather (⚙️ › Weather) or Mac Calendar (⚙️ › Mac Calendar) off at any time and sending or reading stops right away. You can also withdraw access in System Settings › Privacy &amp; Security › Calendars. Everything else keeps working.</li>
-      <li>Information already sent: Open-Meteo's server logs are deleted automatically after 90 days. To have them deleted sooner, ask Open-Meteo (info@open-meteo.com); tell us and we'll help with the request.</li>
+      <li>Stop or withdraw consent: turn Mac Calendar (⚙️ › Mac Calendar) off at any time and reading stops right away. You can also withdraw access in System Settings › Privacy &amp; Security › Calendars. Everything else keeps working.</li>
       <li>The only information we hold is email you send us. Ask the privacy officer below to see or delete it and we'll act without delay (within 10 days at the latest).</li>
     </ul>
   </section>
@@ -238,7 +223,8 @@
     <h2>21. Changes to this policy</h2>
     <p>This policy applies from November 4, 2026. Before any change takes effect, we'll announce it on this page, in <a href="releases.html">What's new</a> and in the app.</p>
     <ul>
-      <li>Version 1.1 (November 4, 2026) · current · <a href="privacy/1.1.html">archived copy</a></li>
+      <li>Version 1.2 (November 4, 2026) · current · <a href="privacy/1.2.html">archived copy</a></li>
+      <li>Version 1.1 (November 4, 2026) · <a href="privacy/1.1.html">archived copy</a></li>
       <li>Version 1.0 (October 28, 2026) · <a href="privacy/1.0.html">archived copy</a></li>
     </ul>
   </section>

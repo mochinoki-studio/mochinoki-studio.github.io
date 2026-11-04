@@ -25,7 +25,7 @@
 <main class="doc">
   <header>
     <h1>Política de privacidade do Mochi Noki</h1>
-    <p class="meta">Em vigor desde 4 de novembro de 2026 · Versão 1.1</p>
+    <p class="meta">Em vigor desde 4 de novembro de 2026 · Versão 1.2</p>
     <p>Esta política explica como o responsável pelo Mochi Noki (“nós”) trata informações no app Mochi Noki para macOS e neste site. Ela segue a estrutura exigida pela Lei de Proteção de Informações Pessoais da Coreia (artigo 30).</p>
   <p class="prevails">Esta versão em português é uma tradução de referência. A versão oficial é a <a href="../privacy.html">versão em coreano</a>; se houver diferenças, prevalece a versão em coreano.</p>
   </header>
@@ -35,7 +35,7 @@
     <div class="labels">
       <span><b>🙅 Nada é coletado</b>Não coletamos suas informações pessoais nem as guardamos em servidor algum. Sem conta, anúncios ou análise.</span>
       <span><b>💻 No seu Mac</b>Seu pet e seus registros são processados e guardados só no seu Mac.</span>
-      <span><b>☁️ Só o clima sai</b>Só se você ligar o clima, o nome de uma cidade e suas coordenadas vão para um serviço de clima.</span>
+      <span><b>📴 Nada é enviado</b>O app não envia nenhuma informação pela internet. Ele nem tem permissão para se conectar.</span>
     </div>
   </section>
 
@@ -71,7 +71,7 @@
     <p>As informações são tratadas só para estas finalidades; se elas mudarem, atualizaremos antes esta política.</p>
     <ul>
       <li>Criar seu pet e guardar seus registros diários (água, alongamento, foco, hábitos, planos)</li>
-      <li>Se você ligar: mostrar e lembrar eventos do Calendário do Mac, e vestir o pet conforme o tempo lá fora</li>
+      <li>Se você ativar: mostrar e lembrar os eventos do Calendário do Mac</li>
       <li>Verificar se você tem o Noki Plus</li>
       <li>Responder quando você entra em contato (por exemplo, por e-mail)</li>
     </ul>
@@ -91,11 +91,8 @@
       <li>Backups: “Exportar backup” grava o que está acima num arquivo onde você escolher. Nas atualizações, o app guarda cópias do salvamento anterior (as três últimas), uma cópia feita logo antes de importar um backup e uma cópia de qualquer salvamento que uma versão nova não conseguiu ler (separada em vez de apagada), tudo na mesma pasta.</li>
     </ul>
     <p>O app não usa câmera, microfone, contatos, Serviços de Localização do macOS (localização por GPS ou Wi-Fi), Acessibilidade, Monitoramento de Entrada nem Gravação de Tela. Ele nunca lê o que você digita, nomes de outros apps, títulos de janelas ou documentos, nem os sites que você visita.</p>
-    <h3>② Enviado só se você ligar</h3>
-    <ul>
-      <li>Clima (desligado por padrão): o nome da cidade que você digita, as coordenadas dela (duas casas decimais, cerca de 1 km) e o código de idioma do app são enviados ao serviço de clima Open-Meteo. Desligar o clima também apaga a cidade e a leitura guardadas. Detalhes: <a href="#overseas">seção 9</a>.</li>
-    </ul>
-    <p>Essas coordenadas são as da cidade que você digitou, não as do seu dispositivo. Mesmo assim, o rótulo de privacidade da App Store as declara como “Localização aproximada · Não vinculada a você · Não usada para rastreamento · Funcionalidade do app”. O app não coleta nenhum outro dado.</p>
+    <h3>② O que é enviado</h3>
+    <p>Nada. O app não tem permissão de rede, então nenhuma informação, nem o seu pet nem seus registros, sai do seu Mac. O recurso de clima das versões anteriores saiu nesta versão; uma cidade digitada antes fica dentro do app, sem uso. O rótulo de privacidade da App Store é “Dados não coletados”.</p>
     <h3>③ Pagamentos</h3>
     <p>Compras e assinaturas do Noki Plus são processadas pela App Store da Apple. Nunca recebemos dados de pagamento nem da sua Conta Apple; o app só consulta os registros de compra assinados que a Apple guarda no seu Mac para saber se o Plus está ativo. Veja a <a href="https://www.apple.com/legal/privacy/">Política de Privacidade da Apple</a>. A assinatura é renovada automaticamente, a menos que seja cancelada pelo menos 24 horas antes da data de renovação; gerencie ou cancele nos ajustes da sua conta da App Store (no app: Loja › Plus › “Gerenciar assinatura”). Os termos de uso são o <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">contrato de licença padrão da Apple (EULA)</a>.</p>
     <h3>④ O que você mesmo envia</h3>
@@ -115,7 +112,6 @@
     <ul>
       <li>No seu Mac: até você apagar. Nós não guardamos nada.</li>
       <li>Cópias do salvamento anterior nas atualizações: as três últimas; as mais antigas são apagadas automaticamente.</li>
-      <li>Pedidos de clima: não temos servidor e não guardamos nada. A Open-Meteo informa que apaga os registros do servidor web após 90 dias (<a href="#overseas">seção 9</a>).</li>
       <li>E-mails: guardados por um ano depois da resposta e então apagados, ou na hora se você pedir.</li>
     </ul>
   </section>
@@ -124,7 +120,7 @@
     <h2>5. Como é apagado</h2>
     <ul>
       <li>Dados do app: mova o app para o Lixo e, no Finder, apague a pasta “Mochi Noki” em <code>~/Library/Containers/</code>. Isso remove seu pet e seus registros.</li>
-      <li>Por recurso: desligar o clima apaga a cidade e a leitura guardadas; desconectar o Calendário limpa os eventos lidos; eventos que o app adicionou ao Calendário podem ser apagados no app Calendário.</li>
+      <li>Por recurso: desconectar o Calendário limpa os eventos lidos; os eventos que o app adicionou ao Calendário podem ser apagados no app Calendário.</li>
       <li>Backups exportados: apague-os onde você os salvou.</li>
       <li>E-mails: apagados sem possibilidade de recuperação ao fim do prazo de guarda.</li>
     </ul>
@@ -134,7 +130,6 @@
     <h2>6. Compartilhamento com terceiros</h2>
     <p>Não compartilhamos nem vendemos informações pessoais a terceiros. O app não contém SDKs de terceiros de análise, publicidade ou relatórios de falhas.</p>
     <ul>
-      <li>Clima: o app consulta o Open-Meteo diretamente, para um recurso que você ativou (<a href="#overseas">seção 9</a>). O Open-Meteo afirma que não vincula endereços IP à identidade de ninguém, não compartilha com terceiros seus registros do servidor (que podem conter coordenadas) e os apaga após 90 dias. Só usamos serviços que protegem as informações pelo menos tanto quanto esta política; se isso mudar, mudaremos ou interromperemos o recurso e atualizaremos esta política.</li>
       <li>Pagamentos: a Apple processa diretamente os pagamentos da App Store, conforme a Política de Privacidade da Apple (<a href="#items">seção 2 ③</a>).</li>
     </ul>
   </section>
@@ -151,16 +146,7 @@
 
   <section id="overseas">
     <h2>9. Transferência internacional</h2>
-    <p>Só se você ligar o clima, o seguinte é enviado ao exterior. Com o clima desligado, nada é.</p>
-    <div class="tw"><table>
-      <tr><th>Destinatário</th><td>OpenMeteo GmbH (Suíça) · info@open-meteo.com</td></tr>
-      <tr><th>Países</th><td>A Open-Meteo informa que seus servidores ficam na Europa e na América do Norte (sem citar países).</td></tr>
-      <tr><th>Quando e como</th><td>Cerca de uma vez por hora enquanto o clima está ligado, e ao buscar uma cidade pela primeira vez; por HTTPS, sem cookies</td></tr>
-      <tr><th>O quê</th><td>Nome da cidade, coordenadas (duas casas decimais), código de idioma do app. Como em qualquer pedido pela internet, seu endereço IP chega ao serviço.</td></tr>
-      <tr><th>Para quê</th><td>Encontrar as coordenadas da cidade e ler o tempo atual</td></tr>
-      <tr><th>Guarda</th><td>Segundo a Open-Meteo, os registros do servidor web são apagados após 90 dias (<a href="https://open-meteo.com/en/terms">termos e aviso de privacidade da Open-Meteo</a>)</td></tr>
-      <tr><th>Como recusar</th><td>Desligue o clima em ⚙️ › Clima. O envio para, e o pet deixa de se vestir conforme o tempo; nada mais muda.</td></tr>
-    </table></div>
+    <p>Não se aplica. O app não envia informações para o exterior nem para lugar nenhum.</p>
   </section>
 
   <section id="safety">
@@ -168,7 +154,7 @@
     <ul>
       <li>As informações são tratadas só no seu Mac; não temos servidores nem sistemas de conta.</li>
       <li>O app roda no App Sandbox do macOS e só acessa o que você permitir.</li>
-      <li>Os pedidos de clima são enviados só por HTTPS criptografado.</li>
+      <li>O app não tem permissão de rede, então as informações não têm como sair do seu Mac.</li>
     </ul>
   </section>
 
@@ -199,8 +185,7 @@
       <li>Ver: no app, ou tudo num arquivo com ⚙️ › Dados › Exportar backup</li>
       <li>Corrigir: edite o nome do pet, hábitos, planos e registros de água no app</li>
       <li>Apagar: registro por registro, ou tudo como na <a href="#destruction">seção 5</a></li>
-      <li>Interromper ou retirar o consentimento: desative o clima (⚙️ › Clima) ou o Calendário do Mac (⚙️ › Calendário do Mac) quando quiser, e o envio ou a leitura param na hora. Você também pode retirar o acesso em Ajustes do Sistema › Privacidade e Segurança › Calendários. Todo o resto continua funcionando.</li>
-      <li>Informações já enviadas: os registros do servidor do Open-Meteo são apagados automaticamente após 90 dias. Para apagá-los antes, peça ao Open-Meteo (info@open-meteo.com); avise-nos e ajudaremos com o pedido.</li>
+      <li>Interromper ou retirar o consentimento: desative o Calendário do Mac (⚙️ › Calendário do Mac) quando quiser, e a leitura para na hora. Você também pode retirar o acesso em Ajustes do Sistema › Privacidade e Segurança › Calendários. Todo o resto continua funcionando.</li>
       <li>As únicas informações que temos são os e-mails que você nos envia. Peça ao responsável abaixo para vê-los ou apagá-los e agiremos sem demora (em até 10 dias).</li>
     </ul>
   </section>
@@ -238,7 +223,8 @@
     <h2>21. Mudanças nesta política</h2>
     <p>Esta política vale a partir de 4 de novembro de 2026. Antes de qualquer mudança entrar em vigor, vamos avisar nesta página, em <a href="releases.html">Novidades</a> e no app.</p>
     <ul>
-      <li>Versão 1.1 (4 de novembro de 2026) · atual · <a href="privacy/1.1.html">cópia arquivada</a></li>
+      <li>Versão 1.2 (4 de novembro de 2026) · atual · <a href="privacy/1.2.html">cópia arquivada</a></li>
+      <li>Versão 1.1 (4 de novembro de 2026) · <a href="privacy/1.1.html">cópia arquivada</a></li>
       <li>Versão 1.0 (28 de outubro de 2026) · <a href="privacy/1.0.html">cópia arquivada</a></li>
     </ul>
   </section>
