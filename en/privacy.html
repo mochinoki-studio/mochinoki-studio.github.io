@@ -25,7 +25,7 @@
 <main class="doc">
   <header>
     <h1>Mochi Noki Privacy Policy</h1>
-    <p class="meta">Effective October 28, 2026 · Version 1.0</p>
+    <p class="meta">Effective November 4, 2026 · Version 1.1</p>
     <p>This policy explains how the operator of Mochi Noki ("we") handles information in the Mochi Noki app for macOS and on this website. It follows the structure required by Korea's Personal Information Protection Act (Article 30).</p>
   <p class="prevails">This English version is provided for reference. The <a href="../privacy.html">Korean version</a> is authoritative; if the two differ, the Korean version prevails.</p>
   </header>
@@ -75,30 +75,32 @@
       <li>Checking whether you have Noki Plus</li>
       <li>Answering you when you contact us (for example by email)</li>
     </ul>
+    <p>We use information only for these purposes. We never use it for advertising, tracking, selling or building profiles, and never combine it with other information.</p>
   </section>
 
   <section id="items">
     <h2>2. What is processed</h2>
     <h3>① Processed on your Mac (on-device)</h3>
-    <p>Mochi Noki's features process information on your device. It isn't sent to any server, and it's deleted from your Mac when you turn the feature off or remove the app (how to remove the app's data folder: <a href="#destruction">section 5</a>).</p>
+    <p>Mochi Noki's features process information on your device. It isn't sent to any server, and it's deleted from your Mac when you delete a record or turn the feature off. macOS keeps an app's data folder even after the app is moved to the Trash; how to remove everything: <a href="#destruction">section 5</a>.</p>
     <ul>
       <li>Your pet: name, stage and look, stats, outfits, album, diary, collection, achievements and quest progress</li>
       <li>What you enter: habits and their history, plans (title, date, time, note), water logs and cups, mini game records</li>
       <li>Settings: reminders, appearance, language, notch side and so on</li>
       <li>Mac status (not stored; only feeds the pet's daily counts): battery level and charging, thermal state, CPU load, time since the last keyboard or mouse input (never what you type), whether the screen is asleep, and whether the front window fills the screen (app names, window titles and contents are never read)</li>
-      <li>Mac Calendar (only if you connect it and allow access in macOS): the next seven days of events in the calendars you pick, read to show and remind you, never stored. If you turn on "Add my plans to Calendar", plans made in the app are written to the calendar you choose, and the app only changes or deletes the events it added.</li>
+      <li>Mac Calendar (only if you connect it and allow access in macOS): the next seven days of events in the calendars you pick, read to show and remind you, never stored. If you turn on "Add my plans to Calendar", plans made in the app are written to the calendar you choose, and the app only changes or deletes the events it added. If you change an event the app added in the Calendar app, its title, date, time and note are updated in the app's plan too.</li>
       <li>Backups: "Export backup" writes the above to a file where you choose. On updates the app keeps copies of the previous save (the last three), a copy made just before you import a backup, and a copy of any save a new version couldn't read (kept aside rather than deleted), all in the same folder.</li>
     </ul>
-    <p>The app uses no camera, microphone, location, contacts, Accessibility, Input Monitoring or Screen Recording access.</p>
+    <p>The app uses no camera, microphone, contacts, macOS Location Services (GPS or Wi-Fi location), Accessibility, Input Monitoring or Screen Recording access. It never reads what you type, other apps' names, window titles or documents, or the websites you visit.</p>
     <h3>② Sent out only when you turn it on</h3>
     <ul>
       <li>Weather (off by default): the city name you type, its coordinates (two decimals, about 1 km) and the app's language code are sent to the weather service Open-Meteo. Turning weather off also deletes the saved city and reading. Details: <a href="#overseas">section 9</a>.</li>
     </ul>
+    <p>These coordinates are those of the city you typed, not of your device. Even so, the App Store privacy label lists them as "Coarse Location · Not linked to you · Not used to track you · App Functionality". The app collects no other data.</p>
     <h3>③ Payments</h3>
-    <p>Noki Plus purchases and subscriptions are handled by Apple's App Store. We never receive payment or Apple Account details; the app only checks the signed purchase records Apple keeps on your Mac to see whether Plus is on. See the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
+    <p>Noki Plus purchases and subscriptions are handled by Apple's App Store. We never receive payment or Apple Account details; the app only checks the signed purchase records Apple keeps on your Mac to see whether Plus is on. See the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. A subscription renews automatically unless cancelled at least 24 hours before the renewal date; manage or cancel it in your App Store account settings (in the app: Shop › Plus › "Manage subscription"). The Terms of Use are <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard license agreement (EULA)</a>.</p>
     <h3>④ What you send yourself</h3>
     <ul>
-      <li>Battle codes: "Copy my code" puts your pet's name, stage and look, level, stats, tricks, outfits, pattern and random pet and collection identifiers on your clipboard. It reaches only whoever you paste it to, never us.</li>
+      <li>Battle codes: "Copy my code" puts your pet's name, stage and look, level, stats, tricks, outfits, pattern and random pet and collection identifiers on your clipboard. It reaches only whoever you paste it to, never us. A friend's code is read from the clipboard only when you choose "Battle the code I copied", and the app keeps only the friend pet's name and look needed for the battle.</li>
       <li>Feedback and questions: "Send feedback" only copies the app and macOS versions, Mac model, display setup, language and a short pet summary to your clipboard; you decide whether to send it. If you email us, we receive your email address and message.</li>
     </ul>
   </section>
@@ -130,7 +132,11 @@
 
   <section id="third-party">
     <h2>6. Sharing with third parties</h2>
-    <p>We don't share personal information with third parties. The weather feature is the app asking a weather service directly, for a feature you turned on; see <a href="#overseas">section 9</a>.</p>
+    <p>We don't share or sell personal information to third parties. The app contains no third-party SDKs for analytics, advertising or crash reporting.</p>
+    <ul>
+      <li>Weather: the app asks Open-Meteo directly, for a feature you turned on (<a href="#overseas">section 9</a>). Open-Meteo says it doesn't link IP addresses to anyone's identity, doesn't share its server logs (which may contain coordinates) with any third party, and deletes them after 90 days. We use only services that protect information at least as well as this policy does; if that changes, we'll change or stop the feature and update this policy.</li>
+      <li>Payments: Apple processes App Store payments directly, under the Apple Privacy Policy (<a href="#items">section 2 ③</a>).</li>
+    </ul>
   </section>
 
   <section id="additional">
@@ -178,7 +184,7 @@
 
   <section id="auto-collection">
     <h2>13. Cookies and similar technologies</h2>
-    <p>The app and this website use no cookies, analytics or advertising identifiers. The website remembers only your light or dark choice in your browser's local storage, which is never sent to us. This website is served by GitHub Pages, and GitHub may log visits, including IP addresses (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>). Its fonts load from Google Fonts.</p>
+    <p>The app and this website use no cookies, analytics or advertising identifiers. The website remembers only your light or dark choice in your browser's local storage, which is never sent to us. This website is served by GitHub Pages, and GitHub may log visits, including IP addresses (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>). Its fonts load from Google Fonts. Google may receive your IP address and similar connection details when the fonts load (<a href="https://policies.google.com/privacy?hl=en">Google Privacy Policy</a>). The app opens website links in your browser and never loads web content inside the app.</p>
   </section>
 
   <section id="behavioral">
@@ -193,8 +199,9 @@
       <li>See: in the app, or all of it as a file with ⚙️ › Data › Export backup</li>
       <li>Correct: edit your pet's name, habits, plans and water logs in the app</li>
       <li>Delete: per record, or everything as in <a href="#destruction">section 5</a></li>
-      <li>Stop: turn Calendar or weather off, or withdraw access in System Settings › Privacy &amp; Security</li>
-      <li>For anything you emailed us, ask the privacy officer below and we'll act without delay.</li>
+      <li>Stop or withdraw consent: turn weather (⚙️ › Weather) or Mac Calendar (⚙️ › Mac Calendar) off at any time and sending or reading stops right away. You can also withdraw access in System Settings › Privacy &amp; Security › Calendars. Everything else keeps working.</li>
+      <li>Information already sent: Open-Meteo's server logs are deleted automatically after 90 days. To have them deleted sooner, ask Open-Meteo (info@open-meteo.com); tell us and we'll help with the request.</li>
+      <li>The only information we hold is email you send us. Ask the privacy officer below to see or delete it and we'll act without delay (within 10 days at the latest).</li>
     </ul>
   </section>
 
@@ -229,12 +236,13 @@
 
   <section id="changes">
     <h2>21. Changes to this policy</h2>
-    <p>This policy applies from October 28, 2026. Before any change takes effect, we'll announce it on this page, in <a href="releases.html">What's new</a> and in the app.</p>
+    <p>This policy applies from November 4, 2026. Before any change takes effect, we'll announce it on this page, in <a href="releases.html">What's new</a> and in the app.</p>
     <ul>
-      <li>Version 1.0 (October 28, 2026) · current · <a href="privacy/1.0.html">archived copy</a></li>
+      <li>Version 1.1 (November 4, 2026) · current · <a href="privacy/1.1.html">archived copy</a></li>
+      <li>Version 1.0 (October 28, 2026) · <a href="privacy/1.0.html">archived copy</a></li>
     </ul>
   </section>
-  <footer>Mochi Noki · a Mac app · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer>
+  <footer>Mochi Noki · a Mac app · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> · <a href="https://github.com/mochi-noki/mochi-noki.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer>
 </main>
 
 <script>
