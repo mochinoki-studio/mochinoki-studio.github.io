@@ -144,6 +144,10 @@
   .toc ol { margin: 6px 0 0; padding-left: 22px; columns: 2 240px; font-size: 15px; }
   .doc h3 { font-size: 17px; margin-top: 6px; }
   .doc table { border-collapse: collapse; font-size: 14px; }
+  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .plan { border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+  .plan.plus { border-color: #f3a6c8; background: color-mix(in srgb, #f3a6c8 10%, transparent); }
+  .plan ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
   .doc th, .doc td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
   .doc th { white-space: nowrap; color: var(--soft); font-weight: 400; }
   .tw { overflow-x: auto; }
