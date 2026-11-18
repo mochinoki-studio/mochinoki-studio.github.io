@@ -144,10 +144,32 @@
   .toc ol { margin: 6px 0 0; padding-left: 22px; columns: 2 240px; font-size: 15px; }
   .doc h3 { font-size: 17px; margin-top: 6px; }
   .doc table { border-collapse: collapse; font-size: 14px; }
-  .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-  .plan { border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
-  .plan.plus { border-color: #f3a6c8; background: color-mix(in srgb, #f3a6c8 10%, transparent); }
-  .plan ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+  .compare { max-width: 980px; }
+  .compare .legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--soft); margin: 4px 0 0; }
+  .plans-head, .compare .row { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
+  .plans-head { position: sticky; top: 0; z-index: 2; background: var(--bg); padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .pp { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); font-size: 13px; line-height: 1.45; }
+  .pp b { font-size: 17px; }
+  .pp.plus { border-color: #f3a6c8; background: color-mix(in srgb, #f3a6c8 12%, var(--card)); }
+  .pp .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .pp .tags i { font-style: normal; font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--soft); }
+  .compare .grp { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 2fr); gap: 14px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .compare .grp h2 { font-size: 17px; margin: 0; }
+  .compare .rows { display: grid; gap: 10px; }
+  .compare .grp .row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; font-size: 14px; line-height: 1.45; align-items: start; }
+  .compare .c { display: flex; gap: 6px; align-items: baseline; }
+  .compare .c.off { color: var(--soft); }
+  .compare .c small { color: var(--soft); font-size: 12px; }
+  .mk { display: inline-block; min-width: 1.2em; font-weight: 700; }
+  .mk.yes { color: #e06a9a; } .mk.lim { color: #d99a2b; } .mk.lock { filter: grayscale(0.2); }
+  .btn { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--card); border: 1px solid var(--line); font-size: 13px; }
+  .btn.plus { background: #f3a6c8; color: #3a2028; border-color: #f3a6c8; }
+  @media (max-width: 640px) {
+    .plans-head { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+    .plans-head > span:first-child { display: none; }
+    .compare .grp { grid-template-columns: 1fr; gap: 8px; }
+    .compare .grp .row { font-size: 13px; gap: 10px; }
+  }
   .doc th, .doc td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
   .doc th { white-space: nowrap; color: var(--soft); font-weight: 400; }
   .tw { overflow-x: auto; }
