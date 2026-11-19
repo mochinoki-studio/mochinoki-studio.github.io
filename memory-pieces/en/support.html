@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Memory Pieces</title>
+<meta name="description" content="Memory Pieces FAQ and how to reach us">
+<link rel="canonical" href="https://mochinoki-studio.github.io/memory-pieces/en/support.html">
+<link rel="alternate" hreflang="ko" href="https://mochinoki-studio.github.io/memory-pieces/support.html">
+<link rel="alternate" hreflang="en" href="https://mochinoki-studio.github.io/memory-pieces/en/support.html">
+<link rel="alternate" hreflang="ja" href="https://mochinoki-studio.github.io/memory-pieces/ja/support.html">
+<link rel="alternate" hreflang="x-default" href="https://mochinoki-studio.github.io/memory-pieces/en/support.html">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=2d18c7b5b5">
+</head>
+<body>
+<header class="site"><div><a class="brand" href="./"><img src="../assets/img/icon.png" alt="">Memory Pieces</a><a href="releases.html">What's new</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><details class="langs"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../support.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/support.html" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="../ja/support.html" lang="ja" hreflang="ja">日本語</a></li></ul></details></div></header>
+<main class="doc">
+  <header><h1>Support</h1><p class="soft">Memory Pieces FAQ and how to reach us</p></header>
+  <section><dl><div><dt>How do I start?</dt><dd>Tap "New Puzzle" on the home screen, pick a photo, frame it and choose the number of pieces. Drag a piece near its spot on the board and it clicks into place.</dd></div>
+<div><dt>What are the difficulty levels?</dt><dd>Easy 9 pieces (3×3), Normal 16 (4×4), Hard 36 (6×6) and Expert 64 (8×8). You can replay the same photo at another level (memory › Play Again).</dd></div>
+<div><dt>What are hints and the guide image, and how do they affect best times?</dt><dd>💡 A hint puts one piece in place. You get 3 free hints per puzzle; after that, watch a short ad for each extra one (unlimited with Remove Ads). 🖼️ The guide lays the photo on the board in a faint gray. A game where you used a hint or the guide even once doesn't count toward best times.</dd></div>
+<div><dt>It says my puzzle drawer is full</dt><dd>You can keep 3 puzzles in progress in the free version, or 6 with Remove Ads. Finish one, or long-press a puzzle in the drawer and choose "Remove from Drawer".</dd></div>
+<div><dt>Is my puzzle saved?</dt><dd>Yes. It saves every time you move a piece, so closing the app or a phone call won't lose anything. After 90 seconds without a touch the timer pauses, and it carries on when you touch again.</dd></div>
+<div><dt>Is Remove Ads a subscription? How do I restore it?</dt><dd>It's a one-time purchase, not a subscription. It removes all ads and grows the puzzle drawer to 6 slots. On a new device or after reinstalling, tap Settings › Restore Purchases, signed in to the same Apple Account (iPhone/iPad) or Google account (Android).</dd></div>
+<div><dt>I'd like a refund</dt><dd>The store handles payments, so refunds are requested from the store: on iPhone and iPad at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>; on Android in the Google Play app › Payments &amp; subscriptions › Budget &amp; history.</dd></div>
+<div><dt>Ad settings and privacy choices</dt><dd>On iPhone and iPad, turn off tracking in Settings › Privacy &amp; Security › Tracking. Where consent applies (such as the EEA and UK), use the app's Settings › Privacy Choices. On Android, delete your advertising ID in Settings › Privacy › Ads.</dd></div>
+<div><dt>How do I delete my photos and records?</dt><dd>Use "Delete" on a memory or "Remove from Drawer" in the drawer. Deleting the app removes all its data. See <a href="privacy.html#destruction">section 5 of the privacy policy</a>.</dd></div>
+<div><dt>Which devices does it run on?</dt><dd>iPhone and iPad with iOS 17 or later (iPhone XS / XR and newer), and Android 8.0 or later.</dd></div>
+<div><dt>Can I turn off the music or sounds?</dt><dd>Music, sound effects and haptics each have their own switch in Settings. If another app is playing music, the background music doesn't start.</dd></div></dl></section>
+  <section><h2>Contact</h2><p>Questions and bug reports are welcome below. For a bug report, these details help us find it quickly:</p><ul><li>Device model and OS version (for example iPhone 15, iOS 18.1 / Galaxy S24, Android 15)</li><li>App version (Settings › Version)</li><li>What you were doing, what happened, and whether it happens again</li><li>A screenshot or screen recording if you can</li></ul><ul><li>Email: <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></li><li>GitHub issues: <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues</a> (needs a GitHub account; it's public, so please leave personal details out)</li></ul></section>
+  <footer>Memory Pieces · for iPhone, iPad and Android · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> · <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer>
+</main>
+<script>
+(function () {
+  var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+  function apply(mode) {
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+  }
+  var saved = 'system';
+  try { saved = localStorage.getItem('memory-pieces-theme') || 'system'; } catch (e) {}
+  apply(saved);
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      apply(b.dataset.mode);
+      try { localStorage.setItem('memory-pieces-theme', b.dataset.mode); } catch (e) {}
+    });
+  });
+})();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script>
+</body>
+</html>

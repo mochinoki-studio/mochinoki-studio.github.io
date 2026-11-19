@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>季節の友だち · モチノキ</title>
+<link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/img/icon.png">
+<meta name="description" content="季節の友だち">
+<link rel="canonical" href="https://mochinoki-studio.github.io/mochi-noki/ja/seasonal.html">
+<link rel="alternate" hreflang="ko" href="https://mochinoki-studio.github.io/mochi-noki/seasonal.html">
+<link rel="alternate" hreflang="en" href="https://mochinoki-studio.github.io/mochi-noki/en/seasonal.html">
+<link rel="alternate" hreflang="ja" href="https://mochinoki-studio.github.io/mochi-noki/ja/seasonal.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mochinoki-studio.github.io/mochi-noki/zh-Hans/seasonal.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mochinoki-studio.github.io/mochi-noki/zh-Hant/seasonal.html">
+<link rel="alternate" hreflang="es" href="https://mochinoki-studio.github.io/mochi-noki/es/seasonal.html">
+<link rel="alternate" hreflang="fr" href="https://mochinoki-studio.github.io/mochi-noki/fr/seasonal.html">
+<link rel="alternate" hreflang="de" href="https://mochinoki-studio.github.io/mochi-noki/de/seasonal.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mochinoki-studio.github.io/mochi-noki/pt-BR/seasonal.html">
+<link rel="alternate" hreflang="x-default" href="https://mochinoki-studio.github.io/mochi-noki/seasonal.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="with-sections">
+<header class="site"><div><a class="brand" href="./">モチノキ</a><a href="pricing.html">料金</a><a href="releases.html">アップデート情報</a><a href="support.html">ヘルプ</a><a href="privacy.html">プライバシー</a><details class="langs"><summary aria-label="言語">🌐 日本語</summary><ul><li><a href="../seasonal.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/seasonal.html" lang="en" hreflang="en">English</a></li><li><a href="../ja/seasonal.html" lang="ja" hreflang="ja" aria-current="true">日本語</a></li><li><a href="../zh-Hans/seasonal.html" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="../zh-Hant/seasonal.html" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="../es/seasonal.html" lang="es" hreflang="es">Español</a></li><li><a href="../fr/seasonal.html" lang="fr" hreflang="fr">Français</a></li><li><a href="../de/seasonal.html" lang="de" hreflang="de">Deutsch</a></li><li><a href="../pt-BR/seasonal.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div></header>
+<nav class="sections" aria-label="モチノキ"><div><a href="./">はじめに</a><a href="friends.html">友だち</a><a href="seasonal.html" aria-current="page">季節の友だち</a><a href="mac.html">Macとの反応</a><a href="care.html">一日のケア</a><a href="light.html">プライバシー</a><a href="install.html">入手方法</a></div></nav>
+<main>
+  <section id="seasonal">
+    <h1 class="page-h">季節の友だち</h1>
+    <p>Noki Plusのメンバーは季節ごとに限定の友だちに出会えます。季節が過ぎても、Plusが終わってもずっと一緒です。秋はウネン（銀杏のおもち）とタンプン（もみじ）、冬はヌンソンイ（ふわふわの雪玉）とホッパン（マフラーを巻いた肉まん）。</p>
+    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/eunhaeng.jpg" alt="赤ちゃん・大人・子どものウネン">
+    <img class="grid-img" loading="lazy" decoding="async" src="../assets/img/noonsongi.jpg" alt="赤ちゃん・大人・子どものヌンソンイ">
+  </section>
+  
+  <div class="pager"><a rel="prev" href="friends.html"><small>← 前へ</small>友だち</a><a rel="next" href="mac.html"><small>次へ →</small>Macとの反応</a></div>
+  <footer>モチノキ · Macアプリ · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約</a> · <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">GitHubで問い合わせる</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer> <p class="hint" style="text-align:center">すべての絵はアプリの実際の描画コードで描いています。</p>
+</main>
+<script>
+  (function () {
+    var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+    function apply(mode) {
+      if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+    }
+    var saved = 'system';
+    try { saved = localStorage.getItem('noki-theme') || 'system'; } catch (e) {}
+    apply(saved);
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        apply(b.dataset.mode);
+        try { localStorage.setItem('noki-theme', b.dataset.mode); } catch (e) {}
+      });
+    });
+  })();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  const list = menu.querySelector('ul');
+  const place = () => {
+    list.style.left = list.style.right = '';
+    const button = menu.getBoundingClientRect();
+    const width = list.offsetWidth;
+    if (button.right - width < 8) { list.style.left = '0'; list.style.right = 'auto'; }
+    list.style.maxHeight = Math.max(160, innerHeight - button.bottom - 24) + 'px';
+  };
+  menu.addEventListener('toggle', () => { if (menu.open) place(); });
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script><script>
+(() => {
+  const row = document.querySelector('.sections div');
+  const link = row && row.querySelector('[aria-current]');
+  if (!link) return;
+  const offset = link.getBoundingClientRect().left - row.getBoundingClientRect().left;
+  row.scrollLeft += offset - (row.clientWidth - link.offsetWidth) / 2;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What's new · Memory Pieces</title>
+<meta name="description" content="What changes in each version.">
+<link rel="canonical" href="https://mochinoki-studio.github.io/memory-pieces/en/releases.html">
+<link rel="alternate" hreflang="ko" href="https://mochinoki-studio.github.io/memory-pieces/releases.html">
+<link rel="alternate" hreflang="en" href="https://mochinoki-studio.github.io/memory-pieces/en/releases.html">
+<link rel="alternate" hreflang="ja" href="https://mochinoki-studio.github.io/memory-pieces/ja/releases.html">
+<link rel="alternate" hreflang="x-default" href="https://mochinoki-studio.github.io/memory-pieces/en/releases.html">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=2d18c7b5b5">
+</head>
+<body>
+<header class="site"><div><a class="brand" href="./"><img src="../assets/img/icon.png" alt="">Memory Pieces</a><a href="releases.html" aria-current="page">What's new</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><details class="langs"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../releases.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/releases.html" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="../ja/releases.html" lang="ja" hreflang="ja">日本語</a></li></ul></details></div></header>
+<main class="doc"><header><h1>What's new</h1><p class="soft">What changes in each version.</p></header>
+<section class="release"><h3>1.0 · TestFlight beta<time>Coming soon</time></h3><ul><li>The first beta is coming soon, on TestFlight first.</li></ul></section>
+<footer>Memory Pieces · for iPhone, iPad and Android · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> · <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer>
+</main>
+<script>
+(function () {
+  var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+  function apply(mode) {
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+  }
+  var saved = 'system';
+  try { saved = localStorage.getItem('memory-pieces-theme') || 'system'; } catch (e) {}
+  apply(saved);
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      apply(b.dataset.mode);
+      try { localStorage.setItem('memory-pieces-theme', b.dataset.mode); } catch (e) {}
+    });
+  });
+})();
+</script><script>
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script>
+</body>
+</html>
