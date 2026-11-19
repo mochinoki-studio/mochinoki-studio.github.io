@@ -28,7 +28,7 @@
 <main class="doc">
   <header>
     <h1>Política de privacidad de Mochi Noki</h1>
-    <p class="meta">En vigor desde el 4 de noviembre de 2026 · Versión 1.2</p>
+    <p class="meta">En vigor desde el 20 de noviembre de 2026 · Versión 1.3</p>
     <p>Esta política explica cómo el responsable de Mochi Noki («nosotros») trata la información en la app Mochi Noki para macOS y en este sitio web. Sigue la estructura que exige la Ley de Protección de Información Personal de Corea (artículo 30).</p>
   <p class="prevails">Esta versión en español es una traducción de referencia. La versión oficial es la <a href="../privacy.html">versión en coreano</a>; si hay diferencias, prevalece la versión en coreano.</p>
   </header>
@@ -38,7 +38,7 @@
     <div class="labels">
       <span><b>🙅 No recogemos nada</b>No recogemos tu información personal ni la guardamos en ningún servidor. Sin cuentas, anuncios ni analítica.</span>
       <span><b>💻 En tu Mac</b>Tu mascota y tus registros se procesan y guardan solo en tu Mac.</span>
-      <span><b>📴 Nada sale</b>La app no envía ninguna información por internet. Ni siquiera tiene permiso para conectarse.</span>
+      <span><b>📴 Nada nos llega</b>La app no nos envía información a nosotros ni a nadie más. Si activas la sincronización con iCloud, tu mascota y tus registros se guardan en tu propio iCloud, donde no podemos verlos.</span>
     </div>
   </section>
 
@@ -75,6 +75,7 @@
     <ul>
       <li>Criar a tu mascota y guardar tus registros diarios (agua, estiramientos, enfoque, hábitos, planes)</li>
       <li>Si lo activas: mostrar y recordarte los eventos del Calendario del Mac</li>
+      <li>Si lo activas: sincronizar tu mascota y tus registros entre tus Mac con tu propio iCloud</li>
       <li>Comprobar si tienes Noki Plus</li>
       <li>Responderte cuando nos escribes (por ejemplo, por correo)</li>
     </ul>
@@ -95,7 +96,7 @@
     </ul>
     <p>La app no usa cámara, micrófono, contactos, Localización de macOS (ubicación por GPS o Wi-Fi), Accesibilidad, Monitorización de entrada ni Grabación de pantalla. Nunca lee lo que escribes, los nombres de otras apps, títulos de ventanas o documentos, ni los sitios web que visitas.</p>
     <h3>② Lo que se envía fuera</h3>
-    <p>Nada. La app no tiene permiso de red, así que ninguna información, ni tu mascota ni tus registros, sale de tu Mac. La función del tiempo de versiones anteriores ya no está en esta versión; una ciudad escrita antes queda dentro de la app, sin usarse. La etiqueta de privacidad del App Store es «Datos no recopilados».</p>
+    <p>No se nos envía nada. La app no tiene permiso de red y no tenemos servidores. Solo si activas ⚙️ › «Sincronizar con iCloud» (o «Criar a Noki con tus otros Mac (iCloud)» en la bienvenida), tu mascota y registros completos (un archivo de guardado firmado, de unas decenas de KB), un identificador aleatorio de ese Mac y la hora de su último uso se guardan en iCloud (la base de datos privada de CloudKit) de tu propia cuenta de Apple. No podemos acceder a estos datos; Apple los guarda según la <a href="https://www.apple.com/legal/privacy/">Política de privacidad de Apple</a>. Si la desactivas, la sincronización se detiene. La función del tiempo de versiones anteriores ya no está en esta versión; una ciudad escrita antes queda dentro de la app, sin usarse. La etiqueta de privacidad del App Store es «Datos no recopilados».</p>
     <h3>③ Pagos</h3>
     <p>Las compras y suscripciones de Noki Plus las gestiona la App Store de Apple. Nunca recibimos datos de pago ni de tu cuenta de Apple; la app solo consulta los registros de compra firmados que Apple guarda en tu Mac para saber si Plus está activo. Consulta la <a href="https://www.apple.com/legal/privacy/">política de privacidad de Apple</a>. La suscripción se renueva automáticamente salvo que la canceles al menos 24 horas antes de la fecha de renovación; gestiónala o cancélala en los ajustes de tu cuenta del App Store (en la app: Tienda › Plus › «Gestionar suscripción»). Los términos de uso son el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">acuerdo de licencia estándar de Apple (EULA)</a>.</p>
     <h3>④ Lo que envías tú</h3>
@@ -115,6 +116,7 @@
     <ul>
       <li>En tu Mac: hasta que lo borres. Nosotros no guardamos nada.</li>
       <li>Copias de la partida anterior al actualizar: las tres últimas; las más antiguas se borran automáticamente.</li>
+      <li>Datos en iCloud (si activas la sincronización): hasta que los borres de tu iCloud. Antes de cambiar a la mascota de iCloud, la app guarda en el Mac hasta diez copias del guardado de ese Mac.</li>
       <li>Correos: se conservan un año después de responder y luego se borran, o enseguida si lo pides.</li>
     </ul>
   </section>
@@ -125,6 +127,7 @@
       <li>Datos de la app: mueve la app a la Papelera y, en el Finder, borra la carpeta «Mochi Noki» dentro de <code>~/Library/Containers/</code>. Así se eliminan tu mascota y tus registros.</li>
       <li>Por función: al desconectar el Calendario se vacían los eventos leídos; los eventos que la app añadió al Calendario se pueden borrar en la app Calendario.</li>
       <li>Copias exportadas: bórralas donde las guardaste.</li>
+      <li>Datos de iCloud: en Ajustes del Sistema › Cuenta de Apple › iCloud › Gestionar almacenamiento, borra los datos de Mochi Noki.</li>
       <li>Correos: se borran sin posibilidad de recuperación al terminar el plazo de conservación.</li>
     </ul>
   </section>
@@ -134,6 +137,7 @@
     <p>No compartimos ni vendemos información personal a terceros. La app no incluye SDK de terceros de análisis, publicidad ni informes de fallos.</p>
     <ul>
       <li>Pagos: Apple trata directamente los pagos del App Store, según la Política de privacidad de Apple (<a href="#items">apartado 2 ③</a>).</li>
+      <li>Sincronización con iCloud: tú guardas los datos en tu propia cuenta de Apple; no los compartimos con nadie (<a href="#items">sección 2 ②</a>).</li>
     </ul>
   </section>
 
@@ -149,7 +153,7 @@
 
   <section id="overseas">
     <h2>9. Transferencias internacionales</h2>
-    <p>No aplica. La app no envía información al extranjero ni a ningún otro sitio.</p>
+    <p>No enviamos información al extranjero. Si activas la sincronización con iCloud, tus datos pueden guardarse en servidores de Apple, también fuera de tu país. Destinatario: Apple Inc. · Datos: los de la <a href="#items">sección 2 ②</a> · Cuándo y cómo: a iCloud cada vez que cambia el guardado con la sincronización activada · Finalidad: sincronizar tus Mac · Conservación: hasta que los borres · Para negarte: desactiva la sincronización (todo lo demás sigue funcionando).</p>
   </section>
 
   <section id="safety">
@@ -157,7 +161,7 @@
     <ul>
       <li>La información se trata solo en tu Mac; no tenemos servidores ni sistemas de cuentas.</li>
       <li>La app se ejecuta en el App Sandbox de macOS y solo accede a lo que permites.</li>
-      <li>La app no tiene permiso de red, así que la información no tiene forma de salir de tu Mac.</li>
+      <li>La app no tiene permiso de red. La única información que sale de tu Mac es la sincronización con iCloud si la activas, guardada solo en el iCloud cifrado de Apple con tu propia cuenta.</li>
     </ul>
   </section>
 
@@ -189,6 +193,7 @@
       <li>Corregir: edita el nombre de tu mascota, hábitos, planes y registros de agua en la app</li>
       <li>Borrar: registro a registro, o todo como en el <a href="#destruction">apartado 5</a></li>
       <li>Detener o retirar el consentimiento: desactiva el Calendario del Mac (⚙️ › Calendario del Mac) cuando quieras y la lectura se detiene al instante. También puedes retirar el acceso en Ajustes del Sistema › Privacidad y seguridad › Calendarios. Todo lo demás sigue funcionando.</li>
+      <li>Sincronización con iCloud: desactiva ⚙️ › «Sincronizar con iCloud» y se detiene al instante. Borra los datos que ya estén en iCloud como en la <a href="#destruction">sección 5</a>.</li>
       <li>La única información que tenemos son los correos que nos envías. Pide al responsable de abajo verlos o borrarlos y actuaremos sin demora (en 10 días como máximo).</li>
     </ul>
   </section>
@@ -224,9 +229,10 @@
 
   <section id="changes">
     <h2>21. Cambios en esta política</h2>
-    <p>Esta política se aplica desde el 4 de noviembre de 2026. Antes de que entre en vigor cualquier cambio, lo anunciaremos en esta página, en <a href="releases.html">Novedades</a> y en la app.</p>
+    <p>Esta política se aplica desde el 20 de noviembre de 2026. Antes de que entre en vigor cualquier cambio, lo anunciaremos en esta página, en <a href="releases.html">Novedades</a> y en la app.</p>
     <ul>
-      <li>Versión 1.2 (4 de noviembre de 2026) · vigente · <a href="privacy/1.2.html">copia archivada</a></li>
+      <li>Versión 1.3 (20 de noviembre de 2026) · vigente · <a href="privacy/1.3.html">copia archivada</a></li>
+      <li>Versión 1.2 (4 de noviembre de 2026) · <a href="privacy/1.2.html">copia archivada</a></li>
       <li>Versión 1.1 (4 de noviembre de 2026) · <a href="privacy/1.1.html">copia archivada</a></li>
       <li>Versión 1.0 (28 de octubre de 2026) · <a href="privacy/1.0.html">copia archivada</a></li>
     </ul>

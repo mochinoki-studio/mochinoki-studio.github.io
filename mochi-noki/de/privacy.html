@@ -28,7 +28,7 @@
 <main class="doc">
   <header>
     <h1>Datenschutzerklärung von Mochi Noki</h1>
-    <p class="meta">Gültig ab 4. November 2026 · Version 1.2</p>
+    <p class="meta">Gültig ab 20. November 2026 · Version 1.3</p>
     <p>Diese Erklärung beschreibt, wie der Betreiber von Mochi Noki („wir“) Informationen in der App Mochi Noki für macOS und auf dieser Website behandelt. Sie folgt dem Aufbau, den das koreanische Gesetz zum Schutz personenbezogener Daten (Artikel 30) verlangt.</p>
   <p class="prevails">Diese deutsche Fassung ist eine Übersetzung zur Information. Maßgeblich ist die <a href="../privacy.html">koreanische Fassung</a>; bei Abweichungen gilt die koreanische Fassung.</p>
   </header>
@@ -38,7 +38,7 @@
     <div class="labels">
       <span><b>🙅 Nichts erhoben</b>Wir erheben keine personenbezogenen Daten und speichern sie auf keinem Server. Keine Konten, keine Werbung, keine Analyse.</span>
       <span><b>💻 Auf deinem Mac</b>Dein Haustier und deine Daten werden nur auf deinem Mac verarbeitet und gespeichert.</span>
-      <span><b>📴 Nichts wird gesendet</b>Die App sendet keine Informationen über das Internet. Sie hat nicht einmal die Berechtigung, sich zu verbinden.</span>
+      <span><b>📴 Nichts geht an uns</b>Die App sendet keine Informationen an uns oder andere. Schaltest du die iCloud-Synchronisierung ein, liegen dein Haustier und deine Einträge in deiner eigenen iCloud, wo wir sie nicht sehen können.</span>
     </div>
   </section>
 
@@ -75,6 +75,7 @@
     <ul>
       <li>Dein Haustier großziehen und deine täglichen Einträge speichern (Trinken, Dehnen, Fokus, Gewohnheiten, Pläne)</li>
       <li>Wenn du es einschaltest: Termine aus dem Mac-Kalender anzeigen und daran erinnern</li>
+      <li>Wenn du es einschaltest: dein Haustier und deine Einträge über deine eigene iCloud zwischen deinen Macs synchronisieren</li>
       <li>Prüfen, ob du Noki Plus hast</li>
       <li>Dir antworten, wenn du uns kontaktierst (zum Beispiel per E-Mail)</li>
     </ul>
@@ -95,7 +96,7 @@
     </ul>
     <p>Die App nutzt weder Kamera, Mikrofon, Kontakte, die Ortungsdienste von macOS (GPS- oder WLAN-Standort) noch Zugriffe für Bedienungshilfen, Eingabeüberwachung oder Bildschirmaufnahme. Sie liest nie, was du tippst, keine Namen anderer Apps, Fenstertitel oder Dokumente und keine Websites, die du besuchst.</p>
     <h3>② Was gesendet wird</h3>
-    <p>Nichts. Die App hat keine Netzwerkberechtigung, daher verlassen keine Informationen – auch nicht dein Haustier oder deine Einträge – deinen Mac. Die Wetterfunktion früherer Versionen gibt es in dieser Version nicht mehr; eine früher eingegebene Stadt bleibt ungenutzt in der App. Das App Store-Datenschutzetikett lautet „Keine Daten erfasst“.</p>
+    <p>An uns wird nichts gesendet. Die App hat keine Netzwerkberechtigung und wir betreiben keine Server. Nur wenn du ⚙️ › „Mit iCloud synchronisieren“ (oder „Noki mit deinen anderen Macs großziehen (iCloud)“ in der Begrüßung) einschaltest, werden dein ganzes Haustier mit allen Einträgen (eine signierte Sicherungsdatei, einige Dutzend KB), eine zufällige Kennung dieses Macs und die Zeit seiner letzten Nutzung in iCloud (der privaten CloudKit-Datenbank) deines eigenen Apple Accounts gespeichert. Wir haben keinen Zugriff auf diese Daten; Apple verwahrt sie gemäß der <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>. Schaltest du sie aus, endet die Synchronisierung. Die Wetterfunktion früherer Versionen gibt es in dieser Version nicht mehr; eine früher eingegebene Stadt bleibt ungenutzt in der App. Das App Store-Datenschutzetikett lautet „Keine Daten erfasst“.</p>
     <h3>③ Zahlungen</h3>
     <p>Käufe und Abos von Noki Plus wickelt der App Store von Apple ab. Wir erhalten nie Zahlungs- oder Apple-Account-Daten; die App prüft nur die signierten Kaufbelege, die Apple auf deinem Mac speichert, um zu sehen, ob Plus aktiv ist. Siehe die <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie von Apple</a>. Ein Abo verlängert sich automatisch, wenn es nicht mindestens 24 Stunden vor dem Verlängerungsdatum gekündigt wird; verwalten oder kündigen kannst du es in den Einstellungen deines App Store-Accounts (in der App: Shop › Plus › „Abo verwalten“). Als Nutzungsbedingungen gilt die <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard-Lizenzvereinbarung von Apple (EULA)</a>.</p>
     <h3>④ Was du selbst versendest</h3>
@@ -115,6 +116,7 @@
     <ul>
       <li>Auf deinem Mac: bis du es löschst. Wir speichern nichts.</li>
       <li>Kopien des vorherigen Spielstands bei Updates: die letzten drei; ältere werden automatisch gelöscht.</li>
+      <li>Daten in iCloud (wenn die Synchronisierung an ist): bis du sie aus deiner iCloud löschst. Bevor zum Haustier aus iCloud gewechselt wird, behält die App bis zu zehn Kopien der Sicherung dieses Macs auf dem Mac.</li>
       <li>E-Mails: ein Jahr nach unserer Antwort aufbewahrt und dann gelöscht, auf Wunsch sofort.</li>
     </ul>
   </section>
@@ -125,6 +127,7 @@
       <li>App-Daten: Bewege die App in den Papierkorb und lösche im Finder den Ordner „Mochi Noki“ unter <code>~/Library/Containers/</code>. Damit sind dein Haustier und deine Daten entfernt.</li>
       <li>Je Funktion: Trennst du den Kalender, werden gelesene Termine geleert; von der App hinzugefügte Termine lassen sich in der Kalender-App löschen.</li>
       <li>Exportierte Backups: Lösche sie dort, wo du sie gespeichert hast.</li>
+      <li>iCloud-Daten: unter Systemeinstellungen › Apple Account › iCloud › Speicher verwalten die Daten von Mochi Noki löschen.</li>
       <li>E-Mails: Nach Ablauf der Speicherdauer unwiederbringlich gelöscht.</li>
     </ul>
   </section>
@@ -134,6 +137,7 @@
     <p>Wir geben personenbezogene Daten nicht an Dritte weiter und verkaufen sie nicht. Die App enthält keine SDKs Dritter für Analyse, Werbung oder Absturzberichte.</p>
     <ul>
       <li>Zahlungen: Apple wickelt Zahlungen im App Store direkt ab, nach der Datenschutzrichtlinie von Apple (<a href="#items">Abschnitt 2 ③</a>).</li>
+      <li>iCloud-Synchronisierung: Du bewahrst die Daten in deinem eigenen Apple Account auf; wir geben sie an niemanden weiter (<a href="#items">Abschnitt 2 ②</a>).</li>
     </ul>
   </section>
 
@@ -149,7 +153,7 @@
 
   <section id="overseas">
     <h2>9. Übermittlung ins Ausland</h2>
-    <p>Entfällt. Die App sendet keine Informationen ins Ausland oder anderswohin.</p>
+    <p>Wir übermitteln keine Informationen ins Ausland. Schaltest du die iCloud-Synchronisierung ein, können deine Daten auf Servern von Apple gespeichert werden, auch außerhalb deines Landes. Empfänger: Apple Inc. · Daten: wie in <a href="#items">Abschnitt 2 ②</a> · Wann und wie: bei jeder Änderung der Sicherung an iCloud, solange die Synchronisierung an ist · Zweck: Synchronisierung zwischen deinen Macs · Speicherdauer: bis du sie löschst · Widerspruch: Synchronisierung ausschalten (alles andere funktioniert weiter).</p>
   </section>
 
   <section id="safety">
@@ -157,7 +161,7 @@
     <ul>
       <li>Informationen werden nur auf deinem Mac verarbeitet; wir haben keine Server oder Kontosysteme.</li>
       <li>Die App läuft in der App Sandbox von macOS und greift nur auf das zu, was du erlaubst.</li>
-      <li>Die App hat keine Netzwerkberechtigung, Informationen können deinen Mac also nicht verlassen.</li>
+      <li>Die App hat keine Netzwerkberechtigung. Die einzigen Informationen, die deinen Mac verlassen, sind die der iCloud-Synchronisierung, wenn du sie einschaltest – gespeichert nur in Apples verschlüsselter iCloud unter deinem eigenen Account.</li>
     </ul>
   </section>
 
@@ -189,6 +193,7 @@
       <li>Berichtigung: Name deines Haustiers, Gewohnheiten, Pläne und Trinkeinträge in der App bearbeiten</li>
       <li>Löschung: einzeln, oder alles wie in <a href="#destruction">Abschnitt 5</a></li>
       <li>Einstellung und Widerruf der Einwilligung: Schalte den Mac-Kalender (⚙️ › Mac-Kalender) jederzeit aus, dann endet das Lesen sofort. Du kannst den Zugriff auch unter Systemeinstellungen › Datenschutz &amp; Sicherheit › Kalender entziehen. Alles andere funktioniert weiter.</li>
+      <li>iCloud-Synchronisierung: Schalte ⚙️ › „Mit iCloud synchronisieren“ aus, dann endet sie sofort. Daten, die schon in iCloud liegen, löschst du wie in <a href="#destruction">Abschnitt 5</a>.</li>
       <li>Die einzigen Informationen, die wir haben, sind E-Mails, die du uns schickst. Wende dich an den Verantwortlichen unten, um sie einzusehen oder löschen zu lassen; wir handeln unverzüglich (spätestens innerhalb von 10 Tagen).</li>
     </ul>
   </section>
@@ -224,9 +229,10 @@
 
   <section id="changes">
     <h2>21. Änderungen dieser Erklärung</h2>
-    <p>Diese Erklärung gilt ab dem 4. November 2026. Bevor eine Änderung wirksam wird, kündigen wir sie auf dieser Seite, unter <a href="releases.html">Neuigkeiten</a> und in der App an.</p>
+    <p>Diese Erklärung gilt ab dem 20. November 2026. Bevor eine Änderung wirksam wird, kündigen wir sie auf dieser Seite, unter <a href="releases.html">Neuigkeiten</a> und in der App an.</p>
     <ul>
-      <li>Version 1.2 (4. November 2026) · aktuell · <a href="privacy/1.2.html">archivierte Fassung</a></li>
+      <li>Version 1.3 (20. November 2026) · aktuell · <a href="privacy/1.3.html">archivierte Fassung</a></li>
+      <li>Version 1.2 (4. November 2026) · <a href="privacy/1.2.html">archivierte Fassung</a></li>
       <li>Version 1.1 (4. November 2026) · <a href="privacy/1.1.html">archivierte Fassung</a></li>
       <li>Version 1.0 (28. Oktober 2026) · <a href="privacy/1.0.html">archivierte Fassung</a></li>
     </ul>
