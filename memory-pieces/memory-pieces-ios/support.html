@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory Pieces</title>
+<link rel="canonical" href="https://mochinoki-studio.github.io/memory-pieces/en/support.html">
+<meta http-equiv="refresh" content="2; url=../en/support.html">
+<script>
+(() => {
+  const hash = location.hash.slice(1);
+  const byHash = {korean: "ko", japanese: "ja", english: "en"}[hash];
+  const pref = (navigator.languages || [navigator.language || "en"]).map(l => l.toLowerCase());
+  const lang = byHash || (pref.find(l => l.startsWith("ko")) ? "ko" : pref.find(l => l.startsWith("ja")) ? "ja" : "en");
+  const keep = byHash ? "" : location.hash;
+  location.replace((lang === "ko" ? "../" : `../${lang}/`) + "support.html" + keep);
+})();
+</script>
+</head>
+<body><p><a href="../en/support.html">Memory Pieces</a> · <a href="../support.html">한국어</a> · <a href="../ja/support.html">日本語</a></p></body>
+</html>
