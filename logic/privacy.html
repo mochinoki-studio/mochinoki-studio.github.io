@@ -6,6 +6,10 @@
 <title>개인정보 처리방침 · 모찌노키 로직</title>
 <meta name="description" content="개인정보 처리방침">
 <link rel="canonical" href="https://mochinoki-studio.github.io/logic/privacy.html">
+<link rel="alternate" hreflang="ko" href="https://mochinoki-studio.github.io/logic/privacy.html">
+<link rel="alternate" hreflang="en" href="https://mochinoki-studio.github.io/logic/en/privacy.html">
+<link rel="alternate" hreflang="ja" href="https://mochinoki-studio.github.io/logic/ja/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://mochinoki-studio.github.io/logic/en/privacy.html">
 <meta property="og:title" content="개인정보 처리방침 · 모찌노키 로직">
 <meta property="og:description" content="개인정보 처리방침">
 <meta property="og:image" content="https://mochinoki-studio.github.io/logic/assets/img/icon.png">
@@ -15,7 +19,7 @@
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<header class="site"><div><a class="brand" href="./"><img src="assets/img/icon.png" alt="">모찌노키 로직</a><a href="pricing.html">가격</a><a href="releases.html">업데이트 소식</a><a href="support.html">도움말</a><a href="privacy.html" aria-current="page">개인정보 처리방침</a></div></header>
+<header class="site"><div><a class="brand" href="./"><img src="assets/img/icon.png" alt="">모찌노키 로직</a><a href="pricing.html">가격</a><a href="releases.html">업데이트 소식</a><a href="support.html">도움말</a><a href="privacy.html" aria-current="page">개인정보 처리방침</a><details class="langs"><summary aria-label="언어">🌐 한국어</summary><ul><li><a href="privacy.html" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="en/privacy.html" lang="en" hreflang="en">English</a></li><li><a href="ja/privacy.html" lang="ja" hreflang="ja">日本語</a></li></ul></details></div></header>
 <main class="doc">
   <header>
     <h1>모찌노키 로직 개인정보 처리방침</h1>
@@ -214,6 +218,14 @@
       apply(b.dataset.mode);
       try { localStorage.setItem('mochinoki-logic-theme', b.dataset.mode); } catch (e) {}
     });
+  });
+})();
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
   });
 })();
 </script>
