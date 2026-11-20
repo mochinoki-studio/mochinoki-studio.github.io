@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Support · Mochi Noki Logic</title>
+<meta name="description" content="Mochi Noki Logic FAQ and how to contact us">
+<link rel="canonical" href="https://mochinoki-studio.github.io/logic/en/support.html">
+<link rel="alternate" hreflang="ko" href="https://mochinoki-studio.github.io/logic/support.html">
+<link rel="alternate" hreflang="en" href="https://mochinoki-studio.github.io/logic/en/support.html">
+<link rel="alternate" hreflang="ja" href="https://mochinoki-studio.github.io/logic/ja/support.html">
+<link rel="alternate" hreflang="x-default" href="https://mochinoki-studio.github.io/logic/en/support.html">
+<meta property="og:title" content="Support · Mochi Noki Logic">
+<meta property="og:description" content="Mochi Noki Logic FAQ and how to contact us">
+<meta property="og:image" content="https://mochinoki-studio.github.io/logic/assets/img/icon.png">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="apple-touch-icon" href="../assets/img/icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site"><div><a class="brand" href="./"><img src="../assets/img/icon.png" alt="">Mochi Noki Logic</a><a href="pricing.html">Pricing</a><a href="releases.html">What's new</a><a href="support.html" aria-current="page">Support</a><a href="privacy.html">Privacy</a><details class="langs"><summary aria-label="Language">🌐 English</summary><ul><li><a href="../support.html" lang="ko" hreflang="ko">한국어</a></li><li><a href="../en/support.html" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="../ja/support.html" lang="ja" hreflang="ja">日本語</a></li></ul></details></div></header>
+<main class="doc">
+  <header><h1>Support</h1><p class="soft">Mochi Noki Logic FAQ and how to contact us</p></header>
+  <section><dl><div><dt>How do I start?</dt><dd>Pick a world on the home screen and tap an open board. Tapping a card below adds it to the command row in order; tapping a card in the command row removes it. When you're done, press Run.</dd></div><div><dt>How do repeat cards work?</dt><dd>When you place a repeat card, new cards go inside it. Tap the number on the repeat card to change the count from 2 to 9, and tap "+ add" again to go back to adding cards at the end.</dd></div><div><dt>How do I earn stars?</dt><dd>In command puzzles, stars depend on how many cards you used. At or under the fewest possible, you get three stars; two more cards gets two. In sorting races, you get one star for finishing, one for beating Mallangi and one for using the fewest swaps.</dd></div><div><dt>Is everything really free?</dt><dd>Yes. All 10 worlds, daily puzzles, practice puzzles, learning reports and wing colors are free. There are no ads or in-app purchases.</dd></div><div><dt>How many hints can I use?</dt><dd>Up to 2 a day. They refill to 2 at the same moment worldwide, 00:00 UTC (9 AM in Korea and Japan). If you're out of hints, place just a few cards and run them to see how far Kongkong gets.</dd></div><div><dt>It's too hard</dt><dd>Open the problem description at the top of the board again. Instead of building everything at once, place a few cards and run them to see how far Kongkong gets.</dd></div><div><dt>What age is it for?</dt><dd>A first grader who can read a little can play alone. Worlds follow the math curriculum, not age, so adults can enjoy it from the start too.</dd></div><div><dt>Does my progress move to a new device?</dt><dd>Not yet. There is no server, so stars and progress are stored only on the device.</dd></div><div><dt>How do I delete my records?</dt><dd>Deleting the app erases all records. See <a href="privacy.html#destruction">section 5 of the Privacy Policy</a>.</dd></div></dl></section>
+  <section><h2>Contact</h2><p>Send questions and bug reports to the addresses below. For bug reports, these details help us check quickly:</p><ul><li>Device model and OS version (for example, iPhone 15, iOS 26.1)</li><li>App version (Settings › Version)</li><li>Which board, what you were doing, what happened, and whether it happens again</li><li>A screenshot or screen recording, if you can</li></ul><ul><li>Email: <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></li><li>GitHub Issues: <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues</a> (Needs a GitHub account. It's a public board, so please don't post personal information.)</li></ul></section>
+  <footer><a href="https://mochinoki-studio.github.io/">← Mochi Noki Studio</a> · Mochi Noki Logic · for iPhone and iPad · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a> · <a href="https://github.com/mochinoki-studio/mochinoki-studio.github.io/issues">Ask on GitHub</a> · <a href="mailto:hello.mochinoki@gmail.com">hello.mochinoki@gmail.com</a></footer>
+</main>
+<script>
+(function () {
+  var root = document.documentElement, buttons = document.querySelectorAll('.theme-switch button');
+  function apply(mode) {
+    if (mode === 'light' || mode === 'dark') root.setAttribute('data-theme', mode); else root.removeAttribute('data-theme');
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.mode === mode)); });
+  }
+  var saved = 'system';
+  try { saved = localStorage.getItem('mochinoki-logic-theme') || 'system'; } catch (e) {}
+  apply(saved);
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      apply(b.dataset.mode);
+      try { localStorage.setItem('mochinoki-logic-theme', b.dataset.mode); } catch (e) {}
+    });
+  });
+})();
+(() => {
+  const menu = document.querySelector('.langs');
+  if (!menu) return;
+  document.addEventListener('click', e => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+  });
+})();
+</script>
+</body>
+</html>
